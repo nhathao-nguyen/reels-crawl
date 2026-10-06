@@ -1,0 +1,2416 @@
+{
+  "schemaVersion": 1,
+  "kind": "tblao.capcut.scene-links",
+  "projectName": "2231 - Ngôn ngữ 1",
+  "mode": "non-destructive",
+  "rules": {
+    "video": "visual scenes remain separate clips",
+    "subtitle": "subtitle cues remain intact; links are logical only",
+    "voice": "voice files remain intact; only speed is adjusted to the full SRT cue",
+    "crossSceneCue": "adjacent visual scenes are assigned to one logical group when a cue crosses their boundary"
+  },
+  "scenes": [
+    {
+      "sceneId": "scene_001",
+      "index": 1,
+      "fileName": "scene_001.mp4",
+      "startSeconds": 0,
+      "endSeconds": 2.569,
+      "durationSeconds": 2.569,
+      "groupId": "scene-group-001",
+      "cueIds": [
+        "cue-001",
+        "cue-002"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "4563f046-a5bc-47c5-af37-6156560b19ce"
+    },
+    {
+      "sceneId": "scene_002",
+      "index": 2,
+      "fileName": "scene_002.mp4",
+      "startSeconds": 2.569,
+      "endSeconds": 5.405,
+      "durationSeconds": 2.8360000000000003,
+      "groupId": "scene-group-002",
+      "cueIds": [
+        "cue-003",
+        "cue-004"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "3f0c04a4-f20a-4d45-a5ce-e7c885c09cae"
+    },
+    {
+      "sceneId": "scene_003",
+      "index": 3,
+      "fileName": "scene_003.mp4",
+      "startSeconds": 5.405,
+      "endSeconds": 6.173,
+      "durationSeconds": 0.7679999999999998,
+      "groupId": "scene-group-003",
+      "cueIds": [
+        "cue-005"
+      ],
+      "sharedCueIds": [
+        "cue-005"
+      ],
+      "videoSegmentId": "0bf296fd-6030-4bda-925d-391b7e1d556e"
+    },
+    {
+      "sceneId": "scene_004",
+      "index": 4,
+      "fileName": "scene_004.mp4",
+      "startSeconds": 6.173,
+      "endSeconds": 9.676,
+      "durationSeconds": 3.503,
+      "groupId": "scene-group-003",
+      "cueIds": [
+        "cue-005",
+        "cue-006",
+        "cue-007"
+      ],
+      "sharedCueIds": [
+        "cue-005"
+      ],
+      "videoSegmentId": "8cefa6e8-4927-4103-95af-19bc68c5b229"
+    },
+    {
+      "sceneId": "scene_005",
+      "index": 5,
+      "fileName": "scene_005.mp4",
+      "startSeconds": 9.676,
+      "endSeconds": 12.746,
+      "durationSeconds": 3.0700000000000003,
+      "groupId": "scene-group-004",
+      "cueIds": [
+        "cue-008",
+        "cue-009"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "8ce3fc92-af43-4faf-b5a2-3f612df566e9"
+    },
+    {
+      "sceneId": "scene_006",
+      "index": 6,
+      "fileName": "scene_006.mp4",
+      "startSeconds": 12.746,
+      "endSeconds": 16.984,
+      "durationSeconds": 4.238000000000001,
+      "groupId": "scene-group-005",
+      "cueIds": [
+        "cue-010",
+        "cue-011",
+        "cue-012"
+      ],
+      "sharedCueIds": [
+        "cue-012"
+      ],
+      "videoSegmentId": "1482d169-20b0-44bd-9f91-41ffe97ae8c9"
+    },
+    {
+      "sceneId": "scene_007",
+      "index": 7,
+      "fileName": "scene_007.mp4",
+      "startSeconds": 16.984,
+      "endSeconds": 17.684,
+      "durationSeconds": 0.6999999999999993,
+      "groupId": "scene-group-005",
+      "cueIds": [
+        "cue-012"
+      ],
+      "sharedCueIds": [
+        "cue-012"
+      ],
+      "videoSegmentId": "40f7fdc7-0300-40bb-98d7-08799120f71c"
+    },
+    {
+      "sceneId": "scene_008",
+      "index": 8,
+      "fileName": "scene_008.mp4",
+      "startSeconds": 17.684,
+      "endSeconds": 19.453,
+      "durationSeconds": 1.7689999999999984,
+      "groupId": "scene-group-006",
+      "cueIds": [
+        "cue-013"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "d4403014-78c8-4c71-b2e5-6d64aaaf054b"
+    },
+    {
+      "sceneId": "scene_009",
+      "index": 9,
+      "fileName": "scene_009.mp4",
+      "startSeconds": 19.453,
+      "endSeconds": 20.587,
+      "durationSeconds": 1.1340000000000003,
+      "groupId": "scene-group-007",
+      "cueIds": [
+        "cue-014"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "89006e00-ba3c-4a67-af3a-744b8f1d6fbe"
+    },
+    {
+      "sceneId": "scene_010",
+      "index": 10,
+      "fileName": "scene_010.mp4",
+      "startSeconds": 20.587,
+      "endSeconds": 21.588,
+      "durationSeconds": 1.0010000000000012,
+      "groupId": "scene-group-008",
+      "cueIds": [
+        "cue-015"
+      ],
+      "sharedCueIds": [
+        "cue-015"
+      ],
+      "videoSegmentId": "7c7dfabe-95af-42fb-9ee3-320dc1355a98"
+    },
+    {
+      "sceneId": "scene_011",
+      "index": 11,
+      "fileName": "scene_011.mp4",
+      "startSeconds": 21.588,
+      "endSeconds": 23.991,
+      "durationSeconds": 2.4029999999999987,
+      "groupId": "scene-group-008",
+      "cueIds": [
+        "cue-015",
+        "cue-016"
+      ],
+      "sharedCueIds": [
+        "cue-015"
+      ],
+      "videoSegmentId": "e30ad618-0c17-434d-851f-a1fd3d921dc7"
+    },
+    {
+      "sceneId": "scene_012",
+      "index": 12,
+      "fileName": "scene_012.mp4",
+      "startSeconds": 23.991,
+      "endSeconds": 26.727,
+      "durationSeconds": 2.7360000000000007,
+      "groupId": "scene-group-009",
+      "cueIds": [
+        "cue-017",
+        "cue-018"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "de541c28-a294-4bac-84fa-ce1dd4b74f31"
+    },
+    {
+      "sceneId": "scene_013",
+      "index": 13,
+      "fileName": "scene_013.mp4",
+      "startSeconds": 26.727,
+      "endSeconds": 30.13,
+      "durationSeconds": 3.4029999999999987,
+      "groupId": "scene-group-010",
+      "cueIds": [
+        "cue-019",
+        "cue-020",
+        "cue-021"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "345ed7e7-ea70-4c28-9973-4bcc9b5834c1"
+    },
+    {
+      "sceneId": "scene_014",
+      "index": 14,
+      "fileName": "scene_014.mp4",
+      "startSeconds": 30.13,
+      "endSeconds": 36.37,
+      "durationSeconds": 6.239999999999998,
+      "groupId": "scene-group-011",
+      "cueIds": [
+        "cue-022",
+        "cue-023",
+        "cue-024",
+        "cue-025"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "aee07dd0-58b1-4d5d-918e-51b112fbd92b"
+    },
+    {
+      "sceneId": "scene_015",
+      "index": 15,
+      "fileName": "scene_015.mp4",
+      "startSeconds": 36.37,
+      "endSeconds": 39.039,
+      "durationSeconds": 2.669000000000004,
+      "groupId": "scene-group-012",
+      "cueIds": [
+        "cue-026",
+        "cue-027"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "76cbe33f-ec7d-4445-a978-11c7f5f4614b"
+    },
+    {
+      "sceneId": "scene_016",
+      "index": 16,
+      "fileName": "scene_016.mp4",
+      "startSeconds": 39.039,
+      "endSeconds": 40.774,
+      "durationSeconds": 1.7349999999999994,
+      "groupId": "scene-group-013",
+      "cueIds": [
+        "cue-028"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "7759b841-0e56-43b5-a0f4-7a2b12e13f4f"
+    },
+    {
+      "sceneId": "scene_017",
+      "index": 17,
+      "fileName": "scene_017.mp4",
+      "startSeconds": 40.774,
+      "endSeconds": 43.777,
+      "durationSeconds": 3.003,
+      "groupId": "scene-group-014",
+      "cueIds": [
+        "cue-029",
+        "cue-030"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "24224322-cbf8-4ab6-90f2-79f01defa0db"
+    },
+    {
+      "sceneId": "scene_018",
+      "index": 18,
+      "fileName": "scene_018.mp4",
+      "startSeconds": 43.777,
+      "endSeconds": 45.445,
+      "durationSeconds": 1.6679999999999993,
+      "groupId": "scene-group-015",
+      "cueIds": [
+        "cue-031"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "79437021-a175-49c5-ab74-f9ea0a0763fd"
+    },
+    {
+      "sceneId": "scene_019",
+      "index": 19,
+      "fileName": "scene_019.mp4",
+      "startSeconds": 45.445,
+      "endSeconds": 46.38,
+      "durationSeconds": 0.9350000000000023,
+      "groupId": "scene-group-016",
+      "cueIds": [
+        "cue-032"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "5230719a-84bf-45f4-b7be-7daaa7906787"
+    },
+    {
+      "sceneId": "scene_020",
+      "index": 20,
+      "fileName": "scene_020.mp4",
+      "startSeconds": 46.38,
+      "endSeconds": 47.814,
+      "durationSeconds": 1.4339999999999975,
+      "groupId": "scene-group-017",
+      "cueIds": [
+        "cue-033"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "84b2214c-1223-4e27-8da7-365d85f8eea0"
+    },
+    {
+      "sceneId": "scene_021",
+      "index": 21,
+      "fileName": "scene_021.mp4",
+      "startSeconds": 47.814,
+      "endSeconds": 49.483,
+      "durationSeconds": 1.668999999999997,
+      "groupId": "scene-group-018",
+      "cueIds": [
+        "cue-034"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "23daa70b-e920-4d03-be4b-c7584cf25a94"
+    },
+    {
+      "sceneId": "scene_022",
+      "index": 22,
+      "fileName": "scene_022.mp4",
+      "startSeconds": 49.483,
+      "endSeconds": 51.185,
+      "durationSeconds": 1.7020000000000053,
+      "groupId": "scene-group-019",
+      "cueIds": [
+        "cue-035"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "a5a6cb51-777a-4320-9619-af81fbbc6e73"
+    },
+    {
+      "sceneId": "scene_023",
+      "index": 23,
+      "fileName": "scene_023.mp4",
+      "startSeconds": 51.185,
+      "endSeconds": 52.085,
+      "durationSeconds": 0.8999999999999986,
+      "groupId": "scene-group-020",
+      "cueIds": [
+        "cue-036"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "85354efd-700a-414e-b02d-a26192654f48"
+    },
+    {
+      "sceneId": "scene_024",
+      "index": 24,
+      "fileName": "scene_024.mp4",
+      "startSeconds": 52.085,
+      "endSeconds": 54.521,
+      "durationSeconds": 2.436,
+      "groupId": "scene-group-021",
+      "cueIds": [
+        "cue-037",
+        "cue-038"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "a1056989-bbe6-4554-9313-76276b239b12"
+    },
+    {
+      "sceneId": "scene_025",
+      "index": 25,
+      "fileName": "scene_025.mp4",
+      "startSeconds": 54.521,
+      "endSeconds": 57.191,
+      "durationSeconds": 2.6700000000000017,
+      "groupId": "scene-group-022",
+      "cueIds": [
+        "cue-039",
+        "cue-040"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "72bf9b22-5194-4c2e-b61e-cf6c6463cd71"
+    },
+    {
+      "sceneId": "scene_026",
+      "index": 26,
+      "fileName": "scene_026.mp4",
+      "startSeconds": 57.191,
+      "endSeconds": 59.56,
+      "durationSeconds": 2.3689999999999998,
+      "groupId": "scene-group-023",
+      "cueIds": [
+        "cue-041"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "dad5fd90-573f-4dc5-abe2-2813c6db6d03"
+    },
+    {
+      "sceneId": "scene_027",
+      "index": 27,
+      "fileName": "scene_027.mp4",
+      "startSeconds": 59.56,
+      "endSeconds": 61.995,
+      "durationSeconds": 2.434999999999995,
+      "groupId": "scene-group-024",
+      "cueIds": [
+        "cue-042",
+        "cue-043"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "00ba433a-2835-45d0-b240-2cd600531cc0"
+    },
+    {
+      "sceneId": "scene_028",
+      "index": 28,
+      "fileName": "scene_028.mp4",
+      "startSeconds": 61.995,
+      "endSeconds": 66.233,
+      "durationSeconds": 4.238000000000007,
+      "groupId": "scene-group-025",
+      "cueIds": [
+        "cue-044",
+        "cue-045",
+        "cue-046"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "e0887a8a-d0c8-49eb-b64c-1a9422c90866"
+    },
+    {
+      "sceneId": "scene_029",
+      "index": 29,
+      "fileName": "scene_029.mp4",
+      "startSeconds": 66.233,
+      "endSeconds": 69.236,
+      "durationSeconds": 3.003,
+      "groupId": "scene-group-026",
+      "cueIds": [
+        "cue-047",
+        "cue-048"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "f0b7b0db-ff26-4f46-8cd6-e51cb1ce9578"
+    },
+    {
+      "sceneId": "scene_030",
+      "index": 30,
+      "fileName": "scene_030.mp4",
+      "startSeconds": 69.236,
+      "endSeconds": 72.506,
+      "durationSeconds": 3.269999999999996,
+      "groupId": "scene-group-027",
+      "cueIds": [
+        "cue-049",
+        "cue-050"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "9392d9e8-62e5-4a18-aa9d-0c4faf345c9c"
+    },
+    {
+      "sceneId": "scene_031",
+      "index": 31,
+      "fileName": "scene_031.mp4",
+      "startSeconds": 72.506,
+      "endSeconds": 73.974,
+      "durationSeconds": 1.4680000000000035,
+      "groupId": "scene-group-028",
+      "cueIds": [
+        "cue-051"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "00eba88f-4dac-4f5e-a40f-af3d845f61bd"
+    },
+    {
+      "sceneId": "scene_032",
+      "index": 32,
+      "fileName": "scene_032.mp4",
+      "startSeconds": 73.974,
+      "endSeconds": 75.175,
+      "durationSeconds": 1.2009999999999934,
+      "groupId": "scene-group-029",
+      "cueIds": [
+        "cue-052"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "bb7891e1-9cd4-4709-b9c3-3303507ba099"
+    },
+    {
+      "sceneId": "scene_033",
+      "index": 33,
+      "fileName": "scene_033.mp4",
+      "startSeconds": 75.175,
+      "endSeconds": 77.844511,
+      "durationSeconds": 2.669511,
+      "groupId": "scene-group-030",
+      "cueIds": [
+        "cue-053",
+        "cue-054"
+      ],
+      "sharedCueIds": [],
+      "videoSegmentId": "d6d81da4-39d7-4f53-8b72-dc720c5b27db"
+    }
+  ],
+  "groups": [
+    {
+      "groupId": "scene-group-001",
+      "index": 1,
+      "startSeconds": 0,
+      "endSeconds": 2.569,
+      "sceneIds": [
+        "scene_001"
+      ],
+      "cueIds": [
+        "cue-001",
+        "cue-002"
+      ],
+      "videoSegmentIds": [
+        "4563f046-a5bc-47c5-af37-6156560b19ce"
+      ],
+      "subtitleSegmentIds": [
+        "eed1ed68-bea6-4cfc-b118-25c320fae535",
+        "1bc88316-4843-4aff-9469-b11b55de3124"
+      ],
+      "voiceSegmentIds": [
+        "0a32979c-9e8a-426e-ab59-901f8aa230eb",
+        "d6988934-01d8-4153-ab09-d1ec2410c699"
+      ]
+    },
+    {
+      "groupId": "scene-group-002",
+      "index": 2,
+      "startSeconds": 2.569,
+      "endSeconds": 5.405,
+      "sceneIds": [
+        "scene_002"
+      ],
+      "cueIds": [
+        "cue-003",
+        "cue-004"
+      ],
+      "videoSegmentIds": [
+        "3f0c04a4-f20a-4d45-a5ce-e7c885c09cae"
+      ],
+      "subtitleSegmentIds": [
+        "17e27455-0025-42ed-afdc-591ef489f072",
+        "ca19100e-3cc2-4ee5-bae7-82a935413d0b"
+      ],
+      "voiceSegmentIds": [
+        "ac4de975-936c-459d-9e17-93b8061bc4c1",
+        "985d7163-1c31-4f61-bebc-0dc59e36ddf6"
+      ]
+    },
+    {
+      "groupId": "scene-group-003",
+      "index": 3,
+      "startSeconds": 5.405,
+      "endSeconds": 9.676,
+      "sceneIds": [
+        "scene_003",
+        "scene_004"
+      ],
+      "cueIds": [
+        "cue-005",
+        "cue-006",
+        "cue-007"
+      ],
+      "videoSegmentIds": [
+        "0bf296fd-6030-4bda-925d-391b7e1d556e",
+        "8cefa6e8-4927-4103-95af-19bc68c5b229"
+      ],
+      "subtitleSegmentIds": [
+        "5acbb210-d9c9-4d8a-89b7-cb586437e180",
+        "61e07e50-58d9-4591-8fe3-3ac9ddb12ba8",
+        "33f61df5-87f2-4494-af7b-9d1a0c1ffda4"
+      ],
+      "voiceSegmentIds": [
+        "deaa8890-ea14-426c-b9ea-91c5a8f72d97",
+        "8ef1d42c-aa08-43d8-9e1b-e0441e08893b",
+        "195943bf-853b-465c-83f7-b33a4a7c6387"
+      ]
+    },
+    {
+      "groupId": "scene-group-004",
+      "index": 4,
+      "startSeconds": 9.676,
+      "endSeconds": 12.746,
+      "sceneIds": [
+        "scene_005"
+      ],
+      "cueIds": [
+        "cue-008",
+        "cue-009"
+      ],
+      "videoSegmentIds": [
+        "8ce3fc92-af43-4faf-b5a2-3f612df566e9"
+      ],
+      "subtitleSegmentIds": [
+        "dd755da1-465b-4db2-94cf-e6529101741e",
+        "8cc775ac-29a6-4036-938f-d58cb8f53ea5"
+      ],
+      "voiceSegmentIds": [
+        "2793c774-2cff-45af-bd0d-9d7c90cad290",
+        "52b70e28-bb62-4ec5-901a-f76449930c4b"
+      ]
+    },
+    {
+      "groupId": "scene-group-005",
+      "index": 5,
+      "startSeconds": 12.746,
+      "endSeconds": 17.684,
+      "sceneIds": [
+        "scene_006",
+        "scene_007"
+      ],
+      "cueIds": [
+        "cue-010",
+        "cue-011",
+        "cue-012"
+      ],
+      "videoSegmentIds": [
+        "1482d169-20b0-44bd-9f91-41ffe97ae8c9",
+        "40f7fdc7-0300-40bb-98d7-08799120f71c"
+      ],
+      "subtitleSegmentIds": [
+        "78e70aa4-e798-4105-bff9-6959386f2a37",
+        "163afb78-9341-49b3-a08a-e4a3117c7210",
+        "a551bdba-81b8-4ffe-849d-415df4e827cb"
+      ],
+      "voiceSegmentIds": [
+        "bbb4bdd1-dc6d-421d-a113-0d12c68e9525",
+        "a08f755d-8e2f-4a7a-b0cc-5c3a89d45082",
+        "8b95b914-388c-4250-a107-6430af16f0be"
+      ]
+    },
+    {
+      "groupId": "scene-group-006",
+      "index": 6,
+      "startSeconds": 17.684,
+      "endSeconds": 19.453,
+      "sceneIds": [
+        "scene_008"
+      ],
+      "cueIds": [
+        "cue-013"
+      ],
+      "videoSegmentIds": [
+        "d4403014-78c8-4c71-b2e5-6d64aaaf054b"
+      ],
+      "subtitleSegmentIds": [
+        "8996656e-6a13-4f5b-8638-72c5ce8ce10a"
+      ],
+      "voiceSegmentIds": [
+        "d30364f2-8a64-46b3-b00a-53667c741d2a"
+      ]
+    },
+    {
+      "groupId": "scene-group-007",
+      "index": 7,
+      "startSeconds": 19.453,
+      "endSeconds": 20.587,
+      "sceneIds": [
+        "scene_009"
+      ],
+      "cueIds": [
+        "cue-014"
+      ],
+      "videoSegmentIds": [
+        "89006e00-ba3c-4a67-af3a-744b8f1d6fbe"
+      ],
+      "subtitleSegmentIds": [
+        "d9913344-96db-4b7c-9ae4-5ea529485615"
+      ],
+      "voiceSegmentIds": [
+        "c4542a52-50e5-4234-89d0-6a4c203fe1db"
+      ]
+    },
+    {
+      "groupId": "scene-group-008",
+      "index": 8,
+      "startSeconds": 20.587,
+      "endSeconds": 23.991,
+      "sceneIds": [
+        "scene_010",
+        "scene_011"
+      ],
+      "cueIds": [
+        "cue-015",
+        "cue-016"
+      ],
+      "videoSegmentIds": [
+        "7c7dfabe-95af-42fb-9ee3-320dc1355a98",
+        "e30ad618-0c17-434d-851f-a1fd3d921dc7"
+      ],
+      "subtitleSegmentIds": [
+        "db38c29e-2cd1-446e-869b-bbc910a40278",
+        "e8b7d3c0-b6a1-4c7a-9cff-4a1a5c5d8f1d"
+      ],
+      "voiceSegmentIds": [
+        "5d3a3626-252b-4e4d-a0f4-5729065b72dc",
+        "f624558b-70b3-4401-b729-3c384db644e6"
+      ]
+    },
+    {
+      "groupId": "scene-group-009",
+      "index": 9,
+      "startSeconds": 23.991,
+      "endSeconds": 26.727,
+      "sceneIds": [
+        "scene_012"
+      ],
+      "cueIds": [
+        "cue-017",
+        "cue-018"
+      ],
+      "videoSegmentIds": [
+        "de541c28-a294-4bac-84fa-ce1dd4b74f31"
+      ],
+      "subtitleSegmentIds": [
+        "a6be9ac1-7a37-4d28-bf53-26c169920f21",
+        "ea6c7c8d-5b2d-4cf8-a46e-92a170400704"
+      ],
+      "voiceSegmentIds": [
+        "ee10fcf2-e75a-4999-8102-ee913dac3a41",
+        "e9908637-956d-4847-b500-5e5eccf99acd"
+      ]
+    },
+    {
+      "groupId": "scene-group-010",
+      "index": 10,
+      "startSeconds": 26.727,
+      "endSeconds": 30.13,
+      "sceneIds": [
+        "scene_013"
+      ],
+      "cueIds": [
+        "cue-019",
+        "cue-020",
+        "cue-021"
+      ],
+      "videoSegmentIds": [
+        "345ed7e7-ea70-4c28-9973-4bcc9b5834c1"
+      ],
+      "subtitleSegmentIds": [
+        "40a4b285-5229-4549-a78c-123c308595b6",
+        "488baba2-8e4f-4b0c-98d5-5ed05febc44c",
+        "ee0a0407-e1b0-402b-8966-a5058bf10b99"
+      ],
+      "voiceSegmentIds": [
+        "6a46a390-f595-461a-8a01-7e67509cf7a5",
+        "80d503aa-e281-4c71-9ae8-ea0fc38ba894",
+        "ffcaeb04-ca3d-4686-adda-8527796a93ad"
+      ]
+    },
+    {
+      "groupId": "scene-group-011",
+      "index": 11,
+      "startSeconds": 30.13,
+      "endSeconds": 36.37,
+      "sceneIds": [
+        "scene_014"
+      ],
+      "cueIds": [
+        "cue-022",
+        "cue-023",
+        "cue-024",
+        "cue-025"
+      ],
+      "videoSegmentIds": [
+        "aee07dd0-58b1-4d5d-918e-51b112fbd92b"
+      ],
+      "subtitleSegmentIds": [
+        "f4af7ade-eff1-4564-87d8-226b615c99ce",
+        "abb533b3-6f6d-4a91-81fa-251b253e88c8",
+        "39560836-6efb-4dbf-987d-b148312bb239",
+        "b13d588d-8498-4dc3-a875-7b3e389ab6db"
+      ],
+      "voiceSegmentIds": [
+        "48e5df36-fb6b-4d98-9e21-1d03d5236632",
+        "c979b511-e370-44fc-823a-7c914c65af5f",
+        "65c8e800-84e7-4983-b87b-a9852ee44a36",
+        "8067a4e6-8ec5-47d2-a1d5-daa6e7cc6576"
+      ]
+    },
+    {
+      "groupId": "scene-group-012",
+      "index": 12,
+      "startSeconds": 36.37,
+      "endSeconds": 39.039,
+      "sceneIds": [
+        "scene_015"
+      ],
+      "cueIds": [
+        "cue-026",
+        "cue-027"
+      ],
+      "videoSegmentIds": [
+        "76cbe33f-ec7d-4445-a978-11c7f5f4614b"
+      ],
+      "subtitleSegmentIds": [
+        "0a29fbc3-6fdf-4690-8c50-f05f970e602d",
+        "747f4b79-8e11-4c92-b2f2-21577adc6e32"
+      ],
+      "voiceSegmentIds": [
+        "b156a7c4-ea97-42fa-a622-bd17a2a6eea5",
+        "125306be-5317-448e-af26-6c1de9193042"
+      ]
+    },
+    {
+      "groupId": "scene-group-013",
+      "index": 13,
+      "startSeconds": 39.039,
+      "endSeconds": 40.774,
+      "sceneIds": [
+        "scene_016"
+      ],
+      "cueIds": [
+        "cue-028"
+      ],
+      "videoSegmentIds": [
+        "7759b841-0e56-43b5-a0f4-7a2b12e13f4f"
+      ],
+      "subtitleSegmentIds": [
+        "902d49b9-5d62-4136-90b7-646ed2768928"
+      ],
+      "voiceSegmentIds": [
+        "579af550-fece-4b94-b824-ad5f75409b63"
+      ]
+    },
+    {
+      "groupId": "scene-group-014",
+      "index": 14,
+      "startSeconds": 40.774,
+      "endSeconds": 43.777,
+      "sceneIds": [
+        "scene_017"
+      ],
+      "cueIds": [
+        "cue-029",
+        "cue-030"
+      ],
+      "videoSegmentIds": [
+        "24224322-cbf8-4ab6-90f2-79f01defa0db"
+      ],
+      "subtitleSegmentIds": [
+        "46e96e27-f35e-4103-a743-b444afbd9115",
+        "20fdec26-281d-47d7-aad0-62ddd687bd82"
+      ],
+      "voiceSegmentIds": [
+        "38296cd0-dbec-42f5-a204-ef566b5254ed",
+        "ff4ff2fa-12a6-4ab4-ade6-119f90036043"
+      ]
+    },
+    {
+      "groupId": "scene-group-015",
+      "index": 15,
+      "startSeconds": 43.777,
+      "endSeconds": 45.445,
+      "sceneIds": [
+        "scene_018"
+      ],
+      "cueIds": [
+        "cue-031"
+      ],
+      "videoSegmentIds": [
+        "79437021-a175-49c5-ab74-f9ea0a0763fd"
+      ],
+      "subtitleSegmentIds": [
+        "511023aa-7472-4fd6-bf02-8debdf7c4c9e"
+      ],
+      "voiceSegmentIds": [
+        "662759a7-04ef-4f5a-8ac4-c64d670eae15"
+      ]
+    },
+    {
+      "groupId": "scene-group-016",
+      "index": 16,
+      "startSeconds": 45.445,
+      "endSeconds": 46.38,
+      "sceneIds": [
+        "scene_019"
+      ],
+      "cueIds": [
+        "cue-032"
+      ],
+      "videoSegmentIds": [
+        "5230719a-84bf-45f4-b7be-7daaa7906787"
+      ],
+      "subtitleSegmentIds": [
+        "d91c9286-e5a8-4680-b89e-7a188173fd18"
+      ],
+      "voiceSegmentIds": [
+        "9b0d0fea-5a8a-4c0e-b552-fccfbbd06c5f"
+      ]
+    },
+    {
+      "groupId": "scene-group-017",
+      "index": 17,
+      "startSeconds": 46.38,
+      "endSeconds": 47.814,
+      "sceneIds": [
+        "scene_020"
+      ],
+      "cueIds": [
+        "cue-033"
+      ],
+      "videoSegmentIds": [
+        "84b2214c-1223-4e27-8da7-365d85f8eea0"
+      ],
+      "subtitleSegmentIds": [
+        "7e10b80b-dad0-4342-9fda-f7b07835d69b"
+      ],
+      "voiceSegmentIds": [
+        "bd6a460f-c01d-48ce-916e-fae60abbc951"
+      ]
+    },
+    {
+      "groupId": "scene-group-018",
+      "index": 18,
+      "startSeconds": 47.814,
+      "endSeconds": 49.483,
+      "sceneIds": [
+        "scene_021"
+      ],
+      "cueIds": [
+        "cue-034"
+      ],
+      "videoSegmentIds": [
+        "23daa70b-e920-4d03-be4b-c7584cf25a94"
+      ],
+      "subtitleSegmentIds": [
+        "d59f7417-e6a6-4663-a645-75623b24ac6a"
+      ],
+      "voiceSegmentIds": [
+        "f849472b-0bae-4e85-9045-a2eb176bbb70"
+      ]
+    },
+    {
+      "groupId": "scene-group-019",
+      "index": 19,
+      "startSeconds": 49.483,
+      "endSeconds": 51.185,
+      "sceneIds": [
+        "scene_022"
+      ],
+      "cueIds": [
+        "cue-035"
+      ],
+      "videoSegmentIds": [
+        "a5a6cb51-777a-4320-9619-af81fbbc6e73"
+      ],
+      "subtitleSegmentIds": [
+        "ba3649e3-554f-4e42-a3b3-33dd17daf639"
+      ],
+      "voiceSegmentIds": [
+        "2b800e78-42bc-4eef-928a-82536c64fb20"
+      ]
+    },
+    {
+      "groupId": "scene-group-020",
+      "index": 20,
+      "startSeconds": 51.185,
+      "endSeconds": 52.085,
+      "sceneIds": [
+        "scene_023"
+      ],
+      "cueIds": [
+        "cue-036"
+      ],
+      "videoSegmentIds": [
+        "85354efd-700a-414e-b02d-a26192654f48"
+      ],
+      "subtitleSegmentIds": [
+        "ea2112b2-54b4-4a3f-b6df-0e0ad6bdaa1c"
+      ],
+      "voiceSegmentIds": [
+        "9e933e23-b936-441f-8d3d-f8b54cd228e0"
+      ]
+    },
+    {
+      "groupId": "scene-group-021",
+      "index": 21,
+      "startSeconds": 52.085,
+      "endSeconds": 54.521,
+      "sceneIds": [
+        "scene_024"
+      ],
+      "cueIds": [
+        "cue-037",
+        "cue-038"
+      ],
+      "videoSegmentIds": [
+        "a1056989-bbe6-4554-9313-76276b239b12"
+      ],
+      "subtitleSegmentIds": [
+        "8c7d6141-dc9f-465a-a3ad-417c71a04d31",
+        "b0f4ca96-3a25-4a24-a170-28853b45599a"
+      ],
+      "voiceSegmentIds": [
+        "e2e001f7-8989-4e40-9c82-953086571088",
+        "7e109f4a-6cff-45c8-abf4-2746f98e472b"
+      ]
+    },
+    {
+      "groupId": "scene-group-022",
+      "index": 22,
+      "startSeconds": 54.521,
+      "endSeconds": 57.191,
+      "sceneIds": [
+        "scene_025"
+      ],
+      "cueIds": [
+        "cue-039",
+        "cue-040"
+      ],
+      "videoSegmentIds": [
+        "72bf9b22-5194-4c2e-b61e-cf6c6463cd71"
+      ],
+      "subtitleSegmentIds": [
+        "635afa0c-c785-4c88-9122-6e02770090dc",
+        "d915316a-18fe-46db-ac04-cf479942e26d"
+      ],
+      "voiceSegmentIds": [
+        "40519466-e59e-4c7a-83a5-a542599bc6cc",
+        "2a194881-1849-4862-b1c4-965b2e102662"
+      ]
+    },
+    {
+      "groupId": "scene-group-023",
+      "index": 23,
+      "startSeconds": 57.191,
+      "endSeconds": 59.56,
+      "sceneIds": [
+        "scene_026"
+      ],
+      "cueIds": [
+        "cue-041"
+      ],
+      "videoSegmentIds": [
+        "dad5fd90-573f-4dc5-abe2-2813c6db6d03"
+      ],
+      "subtitleSegmentIds": [
+        "c710b7cd-0bde-42b7-9c2d-2c73a5574f29"
+      ],
+      "voiceSegmentIds": [
+        "3e2089a2-f508-4473-8ae0-cf99f12c1d95"
+      ]
+    },
+    {
+      "groupId": "scene-group-024",
+      "index": 24,
+      "startSeconds": 59.56,
+      "endSeconds": 61.995,
+      "sceneIds": [
+        "scene_027"
+      ],
+      "cueIds": [
+        "cue-042",
+        "cue-043"
+      ],
+      "videoSegmentIds": [
+        "00ba433a-2835-45d0-b240-2cd600531cc0"
+      ],
+      "subtitleSegmentIds": [
+        "a46ba87d-ef75-46d3-bca9-5d3dd8f71607",
+        "b2bae2cc-d17a-4833-9a7c-f39ba6fe00ea"
+      ],
+      "voiceSegmentIds": [
+        "ca8f8ec2-f8f8-4a07-b3b9-e0480317fb5b",
+        "78c74d6f-f7bf-4c9d-97a4-5f0dd1090a2f"
+      ]
+    },
+    {
+      "groupId": "scene-group-025",
+      "index": 25,
+      "startSeconds": 61.995,
+      "endSeconds": 66.233,
+      "sceneIds": [
+        "scene_028"
+      ],
+      "cueIds": [
+        "cue-044",
+        "cue-045",
+        "cue-046"
+      ],
+      "videoSegmentIds": [
+        "e0887a8a-d0c8-49eb-b64c-1a9422c90866"
+      ],
+      "subtitleSegmentIds": [
+        "917d37f4-dbec-4920-b602-46661afadc48",
+        "899188bf-4482-44a2-8199-d8a36d196280",
+        "816b0bd9-252f-4b24-8352-9b0dab15a204"
+      ],
+      "voiceSegmentIds": [
+        "ff28399a-c5e6-46d6-81a5-8de7dbc91b1d",
+        "b45173e7-1936-4fad-86f6-1105708d3a70",
+        "411dfde7-02ef-4b0f-95e7-4a6465b0125f"
+      ]
+    },
+    {
+      "groupId": "scene-group-026",
+      "index": 26,
+      "startSeconds": 66.233,
+      "endSeconds": 69.236,
+      "sceneIds": [
+        "scene_029"
+      ],
+      "cueIds": [
+        "cue-047",
+        "cue-048"
+      ],
+      "videoSegmentIds": [
+        "f0b7b0db-ff26-4f46-8cd6-e51cb1ce9578"
+      ],
+      "subtitleSegmentIds": [
+        "043644c5-7b13-4202-ba2d-41d1d17bf122",
+        "602696c6-0bc7-40b3-8d5c-dcc6bacc25b7"
+      ],
+      "voiceSegmentIds": [
+        "e66f2c7d-c949-4cb2-9952-2bf9f4ed3b88",
+        "b13af153-ce1d-4596-90a5-4eece76152a3"
+      ]
+    },
+    {
+      "groupId": "scene-group-027",
+      "index": 27,
+      "startSeconds": 69.236,
+      "endSeconds": 72.506,
+      "sceneIds": [
+        "scene_030"
+      ],
+      "cueIds": [
+        "cue-049",
+        "cue-050"
+      ],
+      "videoSegmentIds": [
+        "9392d9e8-62e5-4a18-aa9d-0c4faf345c9c"
+      ],
+      "subtitleSegmentIds": [
+        "efc039de-e219-41d9-9182-7da986504a8c",
+        "ea6811bb-b315-4f89-892b-386fbca12ac2"
+      ],
+      "voiceSegmentIds": [
+        "ad536321-c6b3-4a7b-a0b7-2dcb68dd9c0d",
+        "a5473d5b-e84a-4984-8338-b774bf43d40b"
+      ]
+    },
+    {
+      "groupId": "scene-group-028",
+      "index": 28,
+      "startSeconds": 72.506,
+      "endSeconds": 73.974,
+      "sceneIds": [
+        "scene_031"
+      ],
+      "cueIds": [
+        "cue-051"
+      ],
+      "videoSegmentIds": [
+        "00eba88f-4dac-4f5e-a40f-af3d845f61bd"
+      ],
+      "subtitleSegmentIds": [
+        "0a36a499-8627-426c-a0f4-ca7a3429c4a0"
+      ],
+      "voiceSegmentIds": [
+        "ca035d5b-da67-4447-9003-7b7cfa0e6453"
+      ]
+    },
+    {
+      "groupId": "scene-group-029",
+      "index": 29,
+      "startSeconds": 73.974,
+      "endSeconds": 75.175,
+      "sceneIds": [
+        "scene_032"
+      ],
+      "cueIds": [
+        "cue-052"
+      ],
+      "videoSegmentIds": [
+        "bb7891e1-9cd4-4709-b9c3-3303507ba099"
+      ],
+      "subtitleSegmentIds": [
+        "16074d6c-e9cc-43a9-a426-61ed1b18b78d"
+      ],
+      "voiceSegmentIds": [
+        "52d04758-11dd-43f2-aa59-1f5bb2405d6f"
+      ]
+    },
+    {
+      "groupId": "scene-group-030",
+      "index": 30,
+      "startSeconds": 75.175,
+      "endSeconds": 77.844511,
+      "sceneIds": [
+        "scene_033"
+      ],
+      "cueIds": [
+        "cue-053",
+        "cue-054"
+      ],
+      "videoSegmentIds": [
+        "d6d81da4-39d7-4f53-8b72-dc720c5b27db"
+      ],
+      "subtitleSegmentIds": [
+        "19ce49c3-e375-4757-a42a-be79e402f576",
+        "fe492d6e-0250-4f91-a013-90f338419721"
+      ],
+      "voiceSegmentIds": [
+        "8b3708e8-7407-4630-a644-6024fc18bcfe",
+        "7328aa29-a660-47be-bf8d-03d0fefd900d"
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "cueId": "cue-001",
+      "index": 1,
+      "startSeconds": 0,
+      "endSeconds": 1.28,
+      "originalStartSeconds": 0,
+      "originalEndSeconds": 1.28,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_001",
+      "durationSeconds": 1.28,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "1.mp3",
+      "voiceDurationSeconds": 1.706688,
+      "speed": 1.33335,
+      "sceneIds": [
+        "scene_001"
+      ],
+      "groupId": "scene-group-001",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "0a32979c-9e8a-426e-ab59-901f8aa230eb",
+      "subtitleSegmentId": "eed1ed68-bea6-4cfc-b118-25c320fae535"
+    },
+    {
+      "cueId": "cue-002",
+      "index": 2,
+      "startSeconds": 1.28,
+      "endSeconds": 2.48,
+      "originalStartSeconds": 1.28,
+      "originalEndSeconds": 2.48,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_001",
+      "durationSeconds": 1.2,
+      "text": "นี่คือกุ้งไนลอน",
+      "voiceFileName": "2.mp3",
+      "voiceDurationSeconds": 1.358375,
+      "speed": 1.131979,
+      "sceneIds": [
+        "scene_001"
+      ],
+      "groupId": "scene-group-001",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "d6988934-01d8-4153-ab09-d1ec2410c699",
+      "subtitleSegmentId": "1bc88316-4843-4aff-9469-b11b55de3124"
+    },
+    {
+      "cueId": "cue-003",
+      "index": 3,
+      "startSeconds": 2.569,
+      "endSeconds": 4.02,
+      "originalStartSeconds": 2.48,
+      "originalEndSeconds": 4.02,
+      "alignmentDeltaSeconds": 0.08899999999999997,
+      "assignedSceneId": "scene_002",
+      "durationSeconds": 1.4509999999999996,
+      "text": "เส้นดำในตัวทั้งหนาและยาว",
+      "voiceFileName": "3.mp3",
+      "voiceDurationSeconds": 1.962094,
+      "speed": 1.352236,
+      "sceneIds": [
+        "scene_002"
+      ],
+      "groupId": "scene-group-002",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ac4de975-936c-459d-9e17-93b8061bc4c1",
+      "subtitleSegmentId": "17e27455-0025-42ed-afdc-591ef489f072"
+    },
+    {
+      "cueId": "cue-004",
+      "index": 4,
+      "startSeconds": 4.02,
+      "endSeconds": 5.36,
+      "originalStartSeconds": 4.02,
+      "originalEndSeconds": 5.36,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_002",
+      "durationSeconds": 1.3400000000000007,
+      "text": "แถมยังมีกลิ่นดินค่อนข้างแรง",
+      "voiceFileName": "4.mp3",
+      "voiceDurationSeconds": 2.089813,
+      "speed": 1.559562,
+      "sceneIds": [
+        "scene_002"
+      ],
+      "groupId": "scene-group-002",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "985d7163-1c31-4f61-bebc-0dc59e36ddf6",
+      "subtitleSegmentId": "ca19100e-3cc2-4ee5-bae7-82a935413d0b"
+    },
+    {
+      "cueId": "cue-005",
+      "index": 5,
+      "startSeconds": 5.405,
+      "endSeconds": 6.9,
+      "originalStartSeconds": 5.36,
+      "originalEndSeconds": 6.9,
+      "alignmentDeltaSeconds": 0.04499999999999993,
+      "assignedSceneId": "scene_003",
+      "durationSeconds": 1.495,
+      "text": "กินได้ แต่ไม่แนะนำให้กิน",
+      "voiceFileName": "5.mp3",
+      "voiceDurationSeconds": 2.600656,
+      "speed": 1.739569,
+      "sceneIds": [
+        "scene_003",
+        "scene_004"
+      ],
+      "groupId": "scene-group-003",
+      "crossesVisualSceneBoundary": true,
+      "voiceSegmentId": "deaa8890-ea14-426c-b9ea-91c5a8f72d97",
+      "subtitleSegmentId": "5acbb210-d9c9-4d8a-89b7-cb586437e180"
+    },
+    {
+      "cueId": "cue-006",
+      "index": 6,
+      "startSeconds": 6.9,
+      "endSeconds": 8.42,
+      "originalStartSeconds": 6.9,
+      "originalEndSeconds": 8.42,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_004",
+      "durationSeconds": 1.5199999999999996,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "6.mp3",
+      "voiceDurationSeconds": 1.66025,
+      "speed": 1.09227,
+      "sceneIds": [
+        "scene_004"
+      ],
+      "groupId": "scene-group-003",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "8ef1d42c-aa08-43d8-9e1b-e0441e08893b",
+      "subtitleSegmentId": "61e07e50-58d9-4591-8fe3-3ac9ddb12ba8"
+    },
+    {
+      "cueId": "cue-007",
+      "index": 7,
+      "startSeconds": 8.42,
+      "endSeconds": 9.6,
+      "originalStartSeconds": 8.42,
+      "originalEndSeconds": 9.6,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_004",
+      "durationSeconds": 1.1799999999999997,
+      "text": "นี่คือกุ้งพิณ",
+      "voiceFileName": "7.mp3",
+      "voiceDurationSeconds": 1.277125,
+      "speed": 1.082309,
+      "sceneIds": [
+        "scene_004"
+      ],
+      "groupId": "scene-group-003",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "195943bf-853b-465c-83f7-b33a4a7c6387",
+      "subtitleSegmentId": "33f61df5-87f2-4494-af7b-9d1a0c1ffda4"
+    },
+    {
+      "cueId": "cue-008",
+      "index": 8,
+      "startSeconds": 9.676,
+      "endSeconds": 10.9,
+      "originalStartSeconds": 9.6,
+      "originalEndSeconds": 10.9,
+      "alignmentDeltaSeconds": 0.07600000000000051,
+      "assignedSceneId": "scene_005",
+      "durationSeconds": 1.2240000000000002,
+      "text": "เนื้อแน่นเด้ง เคี้ยวหนึบ",
+      "voiceFileName": "8.mp3",
+      "voiceDurationSeconds": 1.834406,
+      "speed": 1.498698,
+      "sceneIds": [
+        "scene_005"
+      ],
+      "groupId": "scene-group-004",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "2793c774-2cff-45af-bd0d-9d7c90cad290",
+      "subtitleSegmentId": "dd755da1-465b-4db2-94cf-e6529101741e"
+    },
+    {
+      "cueId": "cue-009",
+      "index": 9,
+      "startSeconds": 10.9,
+      "endSeconds": 12.56,
+      "originalStartSeconds": 10.9,
+      "originalEndSeconds": 12.56,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_005",
+      "durationSeconds": 1.6600000000000001,
+      "text": "แค่แกะเปลือกค่อนข้างลำบากหน่อย",
+      "voiceFileName": "9.mp3",
+      "voiceDurationSeconds": 2.252344,
+      "speed": 1.356834,
+      "sceneIds": [
+        "scene_005"
+      ],
+      "groupId": "scene-group-004",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "52b70e28-bb62-4ec5-901a-f76449930c4b",
+      "subtitleSegmentId": "8cc775ac-29a6-4036-938f-d58cb8f53ea5"
+    },
+    {
+      "cueId": "cue-010",
+      "index": 10,
+      "startSeconds": 12.746,
+      "endSeconds": 13.88,
+      "originalStartSeconds": 12.56,
+      "originalEndSeconds": 13.88,
+      "alignmentDeltaSeconds": 0.18599999999999994,
+      "assignedSceneId": "scene_006",
+      "durationSeconds": 1.1340000000000003,
+      "text": "กินได้ แถมอร่อยด้วย",
+      "voiceFileName": "10.mp3",
+      "voiceDurationSeconds": 2.380063,
+      "speed": 2.098821,
+      "sceneIds": [
+        "scene_006"
+      ],
+      "groupId": "scene-group-005",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "bbb4bdd1-dc6d-421d-a113-0d12c68e9525",
+      "subtitleSegmentId": "78e70aa4-e798-4105-bff9-6959386f2a37"
+    },
+    {
+      "cueId": "cue-011",
+      "index": 11,
+      "startSeconds": 13.88,
+      "endSeconds": 16.1,
+      "originalStartSeconds": 13.88,
+      "originalEndSeconds": 16.1,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_006",
+      "durationSeconds": 2.2200000000000006,
+      "text": "ห้ามพิมพ์ MJ ในช่องคอมเมนต์เด็ดขาด",
+      "voiceFileName": "11.mp3",
+      "voiceDurationSeconds": 2.937344,
+      "speed": 1.323128,
+      "sceneIds": [
+        "scene_006"
+      ],
+      "groupId": "scene-group-005",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "a08f755d-8e2f-4a7a-b0cc-5c3a89d45082",
+      "subtitleSegmentId": "163afb78-9341-49b3-a08a-e4a3117c7210"
+    },
+    {
+      "cueId": "cue-012",
+      "index": 12,
+      "startSeconds": 16.1,
+      "endSeconds": 17.4,
+      "originalStartSeconds": 16.1,
+      "originalEndSeconds": 17.4,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_006",
+      "durationSeconds": 1.2999999999999972,
+      "text": "ไม่เชื่อก็ลองดูสิ",
+      "voiceFileName": "12.mp3",
+      "voiceDurationSeconds": 1.567375,
+      "speed": 1.205673,
+      "sceneIds": [
+        "scene_006",
+        "scene_007"
+      ],
+      "groupId": "scene-group-005",
+      "crossesVisualSceneBoundary": true,
+      "voiceSegmentId": "8b95b914-388c-4250-a107-6430af16f0be",
+      "subtitleSegmentId": "a551bdba-81b8-4ffe-849d-415df4e827cb"
+    },
+    {
+      "cueId": "cue-013",
+      "index": 13,
+      "startSeconds": 17.684,
+      "endSeconds": 18.96,
+      "originalStartSeconds": 17.4,
+      "originalEndSeconds": 18.96,
+      "alignmentDeltaSeconds": 0.2840000000000025,
+      "assignedSceneId": "scene_008",
+      "durationSeconds": 1.2759999999999998,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "13.mp3",
+      "voiceDurationSeconds": 1.869219,
+      "speed": 1.464905,
+      "sceneIds": [
+        "scene_008"
+      ],
+      "groupId": "scene-group-006",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "d30364f2-8a64-46b3-b00a-53667c741d2a",
+      "subtitleSegmentId": "8996656e-6a13-4f5b-8638-72c5ce8ce10a"
+    },
+    {
+      "cueId": "cue-014",
+      "index": 14,
+      "startSeconds": 19.453,
+      "endSeconds": 20.12,
+      "originalStartSeconds": 18.96,
+      "originalEndSeconds": 20.12,
+      "alignmentDeltaSeconds": 0.49299999999999855,
+      "assignedSceneId": "scene_009",
+      "durationSeconds": 0.6670000000000016,
+      "text": "นี่คือกุ้งลำธาร",
+      "voiceFileName": "14.mp3",
+      "voiceDurationSeconds": 1.706688,
+      "speed": 2.558753,
+      "sceneIds": [
+        "scene_009"
+      ],
+      "groupId": "scene-group-007",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "c4542a52-50e5-4234-89d0-6a4c203fe1db",
+      "subtitleSegmentId": "d9913344-96db-4b7c-9ae4-5ea529485615"
+    },
+    {
+      "cueId": "cue-015",
+      "index": 15,
+      "startSeconds": 20.587,
+      "endSeconds": 21.64,
+      "originalStartSeconds": 20.12,
+      "originalEndSeconds": 21.64,
+      "alignmentDeltaSeconds": 0.46699999999999875,
+      "assignedSceneId": "scene_010",
+      "durationSeconds": 1.0530000000000008,
+      "text": "ต้องการน้ำที่สะอาดมากเป็นพิเศษ",
+      "voiceFileName": "15.mp3",
+      "voiceDurationSeconds": 2.252344,
+      "speed": 2.138978,
+      "sceneIds": [
+        "scene_010",
+        "scene_011"
+      ],
+      "groupId": "scene-group-008",
+      "crossesVisualSceneBoundary": true,
+      "voiceSegmentId": "5d3a3626-252b-4e4d-a0f4-5729065b72dc",
+      "subtitleSegmentId": "db38c29e-2cd1-446e-869b-bbc910a40278"
+    },
+    {
+      "cueId": "cue-016",
+      "index": 16,
+      "startSeconds": 21.64,
+      "endSeconds": 23.8,
+      "originalStartSeconds": 21.64,
+      "originalEndSeconds": 23.8,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_011",
+      "durationSeconds": 2.16,
+      "text": "ถือเป็นของป่าชั้นเลิศจากลำธารบนภูเขา",
+      "voiceFileName": "16.mp3",
+      "voiceDurationSeconds": 3.146313,
+      "speed": 1.456626,
+      "sceneIds": [
+        "scene_011"
+      ],
+      "groupId": "scene-group-008",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "f624558b-70b3-4401-b729-3c384db644e6",
+      "subtitleSegmentId": "e8b7d3c0-b6a1-4c7a-9cff-4a1a5c5d8f1d"
+    },
+    {
+      "cueId": "cue-017",
+      "index": 17,
+      "startSeconds": 23.991,
+      "endSeconds": 25.28,
+      "originalStartSeconds": 23.8,
+      "originalEndSeconds": 25.28,
+      "alignmentDeltaSeconds": 0.19099999999999895,
+      "assignedSceneId": "scene_012",
+      "durationSeconds": 1.2890000000000015,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "17.mp3",
+      "voiceDurationSeconds": 1.439656,
+      "speed": 1.116878,
+      "sceneIds": [
+        "scene_012"
+      ],
+      "groupId": "scene-group-009",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ee10fcf2-e75a-4999-8102-ee913dac3a41",
+      "subtitleSegmentId": "a6be9ac1-7a37-4d28-bf53-26c169920f21"
+    },
+    {
+      "cueId": "cue-018",
+      "index": 18,
+      "startSeconds": 25.28,
+      "endSeconds": 26.56,
+      "originalStartSeconds": 25.28,
+      "originalEndSeconds": 26.56,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_012",
+      "durationSeconds": 1.2799999999999976,
+      "text": "นี่คือกุ้งนางฟ้า",
+      "voiceFileName": "18.mp3",
+      "voiceDurationSeconds": 1.439656,
+      "speed": 1.124731,
+      "sceneIds": [
+        "scene_012"
+      ],
+      "groupId": "scene-group-009",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "e9908637-956d-4847-b500-5e5eccf99acd",
+      "subtitleSegmentId": "ea6c7c8d-5b2d-4cf8-a46e-92a170400704"
+    },
+    {
+      "cueId": "cue-019",
+      "index": 19,
+      "startSeconds": 26.727,
+      "endSeconds": 28.04,
+      "originalStartSeconds": 26.56,
+      "originalEndSeconds": 28.04,
+      "alignmentDeltaSeconds": 0.1670000000000016,
+      "assignedSceneId": "scene_013",
+      "durationSeconds": 1.3129999999999988,
+      "text": "ตัวเล็กมาก แทบไม่มีเนื้อ",
+      "voiceFileName": "19.mp3",
+      "voiceDurationSeconds": 2.217531,
+      "speed": 1.688904,
+      "sceneIds": [
+        "scene_013"
+      ],
+      "groupId": "scene-group-010",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "6a46a390-f595-461a-8a01-7e67509cf7a5",
+      "subtitleSegmentId": "40a4b285-5229-4549-a78c-123c308595b6"
+    },
+    {
+      "cueId": "cue-020",
+      "index": 20,
+      "startSeconds": 28.04,
+      "endSeconds": 29.14,
+      "originalStartSeconds": 28.04,
+      "originalEndSeconds": 29.14,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_013",
+      "durationSeconds": 1.1000000000000014,
+      "text": "เหมาะสำหรับเลี้ยงดูเล่นเท่านั้น",
+      "voiceFileName": "20.mp3",
+      "voiceDurationSeconds": 1.962094,
+      "speed": 1.783722,
+      "sceneIds": [
+        "scene_013"
+      ],
+      "groupId": "scene-group-010",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "80d503aa-e281-4c71-9ae8-ea0fc38ba894",
+      "subtitleSegmentId": "488baba2-8e4f-4b0c-98d5-5ed05febc44c"
+    },
+    {
+      "cueId": "cue-021",
+      "index": 21,
+      "startSeconds": 29.14,
+      "endSeconds": 29.92,
+      "originalStartSeconds": 29.14,
+      "originalEndSeconds": 29.92,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_013",
+      "durationSeconds": 0.7800000000000011,
+      "text": "ไม่แนะนำให้กิน",
+      "voiceFileName": "21.mp3",
+      "voiceDurationSeconds": 1.439656,
+      "speed": 1.845713,
+      "sceneIds": [
+        "scene_013"
+      ],
+      "groupId": "scene-group-010",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ffcaeb04-ca3d-4686-adda-8527796a93ad",
+      "subtitleSegmentId": "ee0a0407-e1b0-402b-8966-a5058bf10b99"
+    },
+    {
+      "cueId": "cue-022",
+      "index": 22,
+      "startSeconds": 30.13,
+      "endSeconds": 31.38,
+      "originalStartSeconds": 29.92,
+      "originalEndSeconds": 31.38,
+      "alignmentDeltaSeconds": 0.2099999999999973,
+      "assignedSceneId": "scene_014",
+      "durationSeconds": 1.25,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "22.mp3",
+      "voiceDurationSeconds": 1.787938,
+      "speed": 1.43035,
+      "sceneIds": [
+        "scene_014"
+      ],
+      "groupId": "scene-group-011",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "48e5df36-fb6b-4d98-9e21-1d03d5236632",
+      "subtitleSegmentId": "f4af7ade-eff1-4564-87d8-226b615c99ce"
+    },
+    {
+      "cueId": "cue-023",
+      "index": 23,
+      "startSeconds": 31.38,
+      "endSeconds": 32.64,
+      "originalStartSeconds": 31.38,
+      "originalEndSeconds": 32.64,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_014",
+      "durationSeconds": 1.2600000000000016,
+      "text": "นี่คือกุ้งผึ้ง",
+      "voiceFileName": "23.mp3",
+      "voiceDurationSeconds": 1.439656,
+      "speed": 1.142584,
+      "sceneIds": [
+        "scene_014"
+      ],
+      "groupId": "scene-group-011",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "c979b511-e370-44fc-823a-7c914c65af5f",
+      "subtitleSegmentId": "abb533b3-6f6d-4a91-81fa-251b253e88c8"
+    },
+    {
+      "cueId": "cue-024",
+      "index": 24,
+      "startSeconds": 32.64,
+      "endSeconds": 34.16,
+      "originalStartSeconds": 32.64,
+      "originalEndSeconds": 34.16,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_014",
+      "durationSeconds": 1.519999999999996,
+      "text": "เป็นกุ้งทะเลสำหรับเลี้ยงสวยงาม",
+      "voiceFileName": "24.mp3",
+      "voiceDurationSeconds": 2.171094,
+      "speed": 1.428351,
+      "sceneIds": [
+        "scene_014"
+      ],
+      "groupId": "scene-group-011",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "65c8e800-84e7-4983-b87b-a9852ee44a36",
+      "subtitleSegmentId": "39560836-6efb-4dbf-987d-b148312bb239"
+    },
+    {
+      "cueId": "cue-025",
+      "index": 25,
+      "startSeconds": 34.16,
+      "endSeconds": 36.14,
+      "originalStartSeconds": 34.16,
+      "originalEndSeconds": 36.14,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_014",
+      "durationSeconds": 1.980000000000004,
+      "text": "ตัวเล็ก แทบไม่มีคุณค่าในการนำมากิน",
+      "voiceFileName": "25.mp3",
+      "voiceDurationSeconds": 3.274031,
+      "speed": 1.653551,
+      "sceneIds": [
+        "scene_014"
+      ],
+      "groupId": "scene-group-011",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "8067a4e6-8ec5-47d2-a1d5-daa6e7cc6576",
+      "subtitleSegmentId": "b13d588d-8498-4dc3-a875-7b3e389ab6db"
+    },
+    {
+      "cueId": "cue-026",
+      "index": 26,
+      "startSeconds": 36.37,
+      "endSeconds": 37.66,
+      "originalStartSeconds": 36.14,
+      "originalEndSeconds": 37.66,
+      "alignmentDeltaSeconds": 0.22999999999999687,
+      "assignedSceneId": "scene_015",
+      "durationSeconds": 1.2899999999999991,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "26.mp3",
+      "voiceDurationSeconds": 2.125469,
+      "speed": 1.64765,
+      "sceneIds": [
+        "scene_015"
+      ],
+      "groupId": "scene-group-012",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "b156a7c4-ea97-42fa-a622-bd17a2a6eea5",
+      "subtitleSegmentId": "0a29fbc3-6fdf-4690-8c50-f05f970e602d"
+    },
+    {
+      "cueId": "cue-027",
+      "index": 27,
+      "startSeconds": 37.66,
+      "endSeconds": 38.9,
+      "originalStartSeconds": 37.66,
+      "originalEndSeconds": 38.9,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_015",
+      "durationSeconds": 1.240000000000002,
+      "text": "นี่คือกุ้งตัวตลก",
+      "voiceFileName": "27.mp3",
+      "voiceDurationSeconds": 1.567375,
+      "speed": 1.264012,
+      "sceneIds": [
+        "scene_015"
+      ],
+      "groupId": "scene-group-012",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "125306be-5317-448e-af26-6c1de9193042",
+      "subtitleSegmentId": "747f4b79-8e11-4c92-b2f2-21577adc6e32"
+    },
+    {
+      "cueId": "cue-028",
+      "index": 28,
+      "startSeconds": 39.039,
+      "endSeconds": 40.56,
+      "originalStartSeconds": 38.9,
+      "originalEndSeconds": 40.56,
+      "alignmentDeltaSeconds": 0.1390000000000029,
+      "assignedSceneId": "scene_016",
+      "durationSeconds": 1.5210000000000008,
+      "text": "กินดาวทะเลเป็นอาหารโดยเฉพาะ",
+      "voiceFileName": "28.mp3",
+      "voiceDurationSeconds": 2.125469,
+      "speed": 1.397416,
+      "sceneIds": [
+        "scene_016"
+      ],
+      "groupId": "scene-group-013",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "579af550-fece-4b94-b824-ad5f75409b63",
+      "subtitleSegmentId": "902d49b9-5d62-4136-90b7-646ed2768928"
+    },
+    {
+      "cueId": "cue-029",
+      "index": 29,
+      "startSeconds": 40.774,
+      "endSeconds": 42.3,
+      "originalStartSeconds": 40.56,
+      "originalEndSeconds": 42.3,
+      "alignmentDeltaSeconds": 0.21399999999999864,
+      "assignedSceneId": "scene_017",
+      "durationSeconds": 1.5259999999999962,
+      "text": "ในร่างกายอาจสะสมสารพิษได้ง่าย",
+      "voiceFileName": "29.mp3",
+      "voiceDurationSeconds": 2.472938,
+      "speed": 1.620536,
+      "sceneIds": [
+        "scene_017"
+      ],
+      "groupId": "scene-group-014",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "38296cd0-dbec-42f5-a204-ef566b5254ed",
+      "subtitleSegmentId": "46e96e27-f35e-4103-a743-b444afbd9115"
+    },
+    {
+      "cueId": "cue-030",
+      "index": 30,
+      "startSeconds": 42.3,
+      "endSeconds": 43.5,
+      "originalStartSeconds": 42.3,
+      "originalEndSeconds": 43.5,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_017",
+      "durationSeconds": 1.2000000000000028,
+      "text": "ห้ามกินเด็ดขาด",
+      "voiceFileName": "30.mp3",
+      "voiceDurationSeconds": 1.230688,
+      "speed": 1.025573,
+      "sceneIds": [
+        "scene_017"
+      ],
+      "groupId": "scene-group-014",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ff4ff2fa-12a6-4ab4-ade6-119f90036043",
+      "subtitleSegmentId": "20fdec26-281d-47d7-aad0-62ddd687bd82"
+    },
+    {
+      "cueId": "cue-031",
+      "index": 31,
+      "startSeconds": 43.777,
+      "endSeconds": 45.06,
+      "originalStartSeconds": 43.5,
+      "originalEndSeconds": 45.06,
+      "alignmentDeltaSeconds": 0.277000000000001,
+      "assignedSceneId": "scene_018",
+      "durationSeconds": 1.2830000000000013,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "31.mp3",
+      "voiceDurationSeconds": 1.834406,
+      "speed": 1.429779,
+      "sceneIds": [
+        "scene_018"
+      ],
+      "groupId": "scene-group-015",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "662759a7-04ef-4f5a-8ac4-c64d670eae15",
+      "subtitleSegmentId": "511023aa-7472-4fd6-bf02-8debdf7c4c9e"
+    },
+    {
+      "cueId": "cue-032",
+      "index": 32,
+      "startSeconds": 45.445,
+      "endSeconds": 46.3,
+      "originalStartSeconds": 45.06,
+      "originalEndSeconds": 46.3,
+      "alignmentDeltaSeconds": 0.384999999999998,
+      "assignedSceneId": "scene_019",
+      "durationSeconds": 0.8549999999999969,
+      "text": "นี่คือกุ้งแรด",
+      "voiceFileName": "32.mp3",
+      "voiceDurationSeconds": 1.311938,
+      "speed": 1.53443,
+      "sceneIds": [
+        "scene_019"
+      ],
+      "groupId": "scene-group-016",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "9b0d0fea-5a8a-4c0e-b552-fccfbbd06c5f",
+      "subtitleSegmentId": "d91c9286-e5a8-4680-b89e-7a188173fd18"
+    },
+    {
+      "cueId": "cue-033",
+      "index": 33,
+      "startSeconds": 46.38,
+      "endSeconds": 47.64,
+      "originalStartSeconds": 46.3,
+      "originalEndSeconds": 47.64,
+      "alignmentDeltaSeconds": 0.0800000000000054,
+      "assignedSceneId": "scene_020",
+      "durationSeconds": 1.259999999999998,
+      "text": "เนื้อแน่น สดหวาน",
+      "voiceFileName": "33.mp3",
+      "voiceDurationSeconds": 1.915656,
+      "speed": 1.520362,
+      "sceneIds": [
+        "scene_020"
+      ],
+      "groupId": "scene-group-017",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "bd6a460f-c01d-48ce-916e-fae60abbc951",
+      "subtitleSegmentId": "7e10b80b-dad0-4342-9fda-f7b07835d69b"
+    },
+    {
+      "cueId": "cue-034",
+      "index": 34,
+      "startSeconds": 47.814,
+      "endSeconds": 49.12,
+      "originalStartSeconds": 47.64,
+      "originalEndSeconds": 49.12,
+      "alignmentDeltaSeconds": 0.1739999999999995,
+      "assignedSceneId": "scene_021",
+      "durationSeconds": 1.3059999999999974,
+      "text": "กินได้ แถมอร่อยด้วย",
+      "voiceFileName": "34.mp3",
+      "voiceDurationSeconds": 1.962094,
+      "speed": 1.502369,
+      "sceneIds": [
+        "scene_021"
+      ],
+      "groupId": "scene-group-018",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "f849472b-0bae-4e85-9045-a2eb176bbb70",
+      "subtitleSegmentId": "d59f7417-e6a6-4663-a645-75623b24ac6a"
+    },
+    {
+      "cueId": "cue-035",
+      "index": 35,
+      "startSeconds": 49.483,
+      "endSeconds": 50.72,
+      "originalStartSeconds": 49.12,
+      "originalEndSeconds": 50.72,
+      "alignmentDeltaSeconds": 0.36299999999999955,
+      "assignedSceneId": "scene_022",
+      "durationSeconds": 1.2370000000000019,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "35.mp3",
+      "voiceDurationSeconds": 1.7415,
+      "speed": 1.407842,
+      "sceneIds": [
+        "scene_022"
+      ],
+      "groupId": "scene-group-019",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "2b800e78-42bc-4eef-928a-82536c64fb20",
+      "subtitleSegmentId": "ba3649e3-554f-4e42-a3b3-33dd17daf639"
+    },
+    {
+      "cueId": "cue-036",
+      "index": 36,
+      "startSeconds": 51.185,
+      "endSeconds": 51.98,
+      "originalStartSeconds": 50.72,
+      "originalEndSeconds": 51.98,
+      "alignmentDeltaSeconds": 0.4650000000000034,
+      "assignedSceneId": "scene_023",
+      "durationSeconds": 0.7949999999999946,
+      "text": "นี่คือกุ้งไฟ",
+      "voiceFileName": "36.mp3",
+      "voiceDurationSeconds": 1.311938,
+      "speed": 1.650236,
+      "sceneIds": [
+        "scene_023"
+      ],
+      "groupId": "scene-group-020",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "9e933e23-b936-441f-8d3d-f8b54cd228e0",
+      "subtitleSegmentId": "ea2112b2-54b4-4a3f-b6df-0e0ad6bdaa1c"
+    },
+    {
+      "cueId": "cue-037",
+      "index": 37,
+      "startSeconds": 52.085,
+      "endSeconds": 53.38,
+      "originalStartSeconds": 51.98,
+      "originalEndSeconds": 53.38,
+      "alignmentDeltaSeconds": 0.10500000000000398,
+      "assignedSceneId": "scene_024",
+      "durationSeconds": 1.2950000000000017,
+      "text": "เป็นกุ้งสำหรับเลี้ยงสวยงาม",
+      "voiceFileName": "37.mp3",
+      "voiceDurationSeconds": 2.252344,
+      "speed": 1.739262,
+      "sceneIds": [
+        "scene_024"
+      ],
+      "groupId": "scene-group-021",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "e2e001f7-8989-4e40-9c82-953086571088",
+      "subtitleSegmentId": "8c7d6141-dc9f-465a-a3ad-417c71a04d31"
+    },
+    {
+      "cueId": "cue-038",
+      "index": 38,
+      "startSeconds": 53.38,
+      "endSeconds": 54.18,
+      "originalStartSeconds": 53.38,
+      "originalEndSeconds": 54.18,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_024",
+      "durationSeconds": 0.7999999999999972,
+      "text": "กินไม่ได้",
+      "voiceFileName": "38.mp3",
+      "voiceDurationSeconds": 1.056531,
+      "speed": 1.320664,
+      "sceneIds": [
+        "scene_024"
+      ],
+      "groupId": "scene-group-021",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "7e109f4a-6cff-45c8-abf4-2746f98e472b",
+      "subtitleSegmentId": "b0f4ca96-3a25-4a24-a170-28853b45599a"
+    },
+    {
+      "cueId": "cue-039",
+      "index": 39,
+      "startSeconds": 54.521,
+      "endSeconds": 55.76,
+      "originalStartSeconds": 54.18,
+      "originalEndSeconds": 55.76,
+      "alignmentDeltaSeconds": 0.3410000000000011,
+      "assignedSceneId": "scene_025",
+      "durationSeconds": 1.2389999999999972,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "39.mp3",
+      "voiceDurationSeconds": 1.787938,
+      "speed": 1.443049,
+      "sceneIds": [
+        "scene_025"
+      ],
+      "groupId": "scene-group-022",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "40519466-e59e-4c7a-83a5-a542599bc6cc",
+      "subtitleSegmentId": "635afa0c-c785-4c88-9122-6e02770090dc"
+    },
+    {
+      "cueId": "cue-040",
+      "index": 40,
+      "startSeconds": 55.76,
+      "endSeconds": 57.06,
+      "originalStartSeconds": 55.76,
+      "originalEndSeconds": 57.06,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_025",
+      "durationSeconds": 1.3000000000000043,
+      "text": "นี่คือกุ้งดอกไม้ทะเล",
+      "voiceFileName": "40.mp3",
+      "voiceDurationSeconds": 1.834406,
+      "speed": 1.411082,
+      "sceneIds": [
+        "scene_025"
+      ],
+      "groupId": "scene-group-022",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "2a194881-1849-4862-b1c4-965b2e102662",
+      "subtitleSegmentId": "d915316a-18fe-46db-ac04-cf479942e26d"
+    },
+    {
+      "cueId": "cue-041",
+      "index": 41,
+      "startSeconds": 57.191,
+      "endSeconds": 59.38,
+      "originalStartSeconds": 57.06,
+      "originalEndSeconds": 59.38,
+      "alignmentDeltaSeconds": 0.13100000000000023,
+      "assignedSceneId": "scene_026",
+      "durationSeconds": 2.189,
+      "text": "อาศัยอยู่ร่วมกับดอกไม้ทะเลตามหนวดตลอดเวลา",
+      "voiceFileName": "41.mp3",
+      "voiceDurationSeconds": 3.366906,
+      "speed": 1.538102,
+      "sceneIds": [
+        "scene_026"
+      ],
+      "groupId": "scene-group-023",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "3e2089a2-f508-4473-8ae0-cf99f12c1d95",
+      "subtitleSegmentId": "c710b7cd-0bde-42b7-9c2d-2c73a5574f29"
+    },
+    {
+      "cueId": "cue-042",
+      "index": 42,
+      "startSeconds": 59.56,
+      "endSeconds": 60.96,
+      "originalStartSeconds": 59.38,
+      "originalEndSeconds": 60.96,
+      "alignmentDeltaSeconds": 0.17999999999999972,
+      "assignedSceneId": "scene_027",
+      "durationSeconds": 1.3999999999999986,
+      "text": "เป็นกุ้งจิ๋วสำหรับเลี้ยงสวยงาม",
+      "voiceFileName": "42.mp3",
+      "voiceDurationSeconds": 2.728375,
+      "speed": 1.948839,
+      "sceneIds": [
+        "scene_027"
+      ],
+      "groupId": "scene-group-024",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ca8f8ec2-f8f8-4a07-b3b9-e0480317fb5b",
+      "subtitleSegmentId": "a46ba87d-ef75-46d3-bca9-5d3dd8f71607"
+    },
+    {
+      "cueId": "cue-043",
+      "index": 43,
+      "startSeconds": 60.96,
+      "endSeconds": 61.7,
+      "originalStartSeconds": 60.96,
+      "originalEndSeconds": 61.7,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_027",
+      "durationSeconds": 0.740000000000002,
+      "text": "กินไม่ได้",
+      "voiceFileName": "43.mp3",
+      "voiceDurationSeconds": 1.056531,
+      "speed": 1.427745,
+      "sceneIds": [
+        "scene_027"
+      ],
+      "groupId": "scene-group-024",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "78c74d6f-f7bf-4c9d-97a4-5f0dd1090a2f",
+      "subtitleSegmentId": "b2bae2cc-d17a-4833-9a7c-f39ba6fe00ea"
+    },
+    {
+      "cueId": "cue-044",
+      "index": 44,
+      "startSeconds": 61.995,
+      "endSeconds": 63.24,
+      "originalStartSeconds": 61.7,
+      "originalEndSeconds": 63.24,
+      "alignmentDeltaSeconds": 0.2949999999999946,
+      "assignedSceneId": "scene_028",
+      "durationSeconds": 1.2450000000000045,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "44.mp3",
+      "voiceDurationSeconds": 1.869219,
+      "speed": 1.501381,
+      "sceneIds": [
+        "scene_028"
+      ],
+      "groupId": "scene-group-025",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ff28399a-c5e6-46d6-81a5-8de7dbc91b1d",
+      "subtitleSegmentId": "917d37f4-dbec-4920-b602-46661afadc48"
+    },
+    {
+      "cueId": "cue-045",
+      "index": 45,
+      "startSeconds": 63.24,
+      "endSeconds": 64.5,
+      "originalStartSeconds": 63.24,
+      "originalEndSeconds": 64.5,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_028",
+      "durationSeconds": 1.259999999999998,
+      "text": "นี่คือกั้งตั๊กแตน",
+      "voiceFileName": "45.mp3",
+      "voiceDurationSeconds": 1.66025,
+      "speed": 1.317659,
+      "sceneIds": [
+        "scene_028"
+      ],
+      "groupId": "scene-group-025",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "b45173e7-1936-4fad-86f6-1105708d3a70",
+      "subtitleSegmentId": "899188bf-4482-44a2-8199-d8a36d196280"
+    },
+    {
+      "cueId": "cue-046",
+      "index": 46,
+      "startSeconds": 64.5,
+      "endSeconds": 65.88,
+      "originalStartSeconds": 64.5,
+      "originalEndSeconds": 65.88,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_028",
+      "durationSeconds": 1.3799999999999955,
+      "text": "กินได้ แถมอร่อยด้วย",
+      "voiceFileName": "46.mp3",
+      "voiceDurationSeconds": 2.171094,
+      "speed": 1.573257,
+      "sceneIds": [
+        "scene_028"
+      ],
+      "groupId": "scene-group-025",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "411dfde7-02ef-4b0f-95e7-4a6465b0125f",
+      "subtitleSegmentId": "816b0bd9-252f-4b24-8352-9b0dab15a204"
+    },
+    {
+      "cueId": "cue-047",
+      "index": 47,
+      "startSeconds": 66.233,
+      "endSeconds": 67.5,
+      "originalStartSeconds": 65.88,
+      "originalEndSeconds": 67.5,
+      "alignmentDeltaSeconds": 0.35300000000000864,
+      "assignedSceneId": "scene_029",
+      "durationSeconds": 1.266999999999996,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "47.mp3",
+      "voiceDurationSeconds": 1.834406,
+      "speed": 1.447834,
+      "sceneIds": [
+        "scene_029"
+      ],
+      "groupId": "scene-group-026",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "e66f2c7d-c949-4cb2-9952-2bf9f4ed3b88",
+      "subtitleSegmentId": "043644c5-7b13-4202-ba2d-41d1d17bf122"
+    },
+    {
+      "cueId": "cue-048",
+      "index": 48,
+      "startSeconds": 67.5,
+      "endSeconds": 69.2,
+      "originalStartSeconds": 67.5,
+      "originalEndSeconds": 69.2,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_029",
+      "durationSeconds": 1.7000000000000028,
+      "text": "นี่คือกุ้งไดโนเสาร์สามตา",
+      "voiceFileName": "48.mp3",
+      "voiceDurationSeconds": 4.005469,
+      "speed": 2.356158,
+      "sceneIds": [
+        "scene_029"
+      ],
+      "groupId": "scene-group-026",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "b13af153-ce1d-4596-90a5-4eece76152a3",
+      "subtitleSegmentId": "602696c6-0bc7-40b3-8d5c-dcc6bacc25b7"
+    },
+    {
+      "cueId": "cue-049",
+      "index": 49,
+      "startSeconds": 69.236,
+      "endSeconds": 71.28,
+      "originalStartSeconds": 69.2,
+      "originalEndSeconds": 71.28,
+      "alignmentDeltaSeconds": 0.036000000000001364,
+      "assignedSceneId": "scene_030",
+      "durationSeconds": 2.043999999999997,
+      "text": "ในตัวอาจมีเชื้อโรคและปรสิตได้ง่าย",
+      "voiceFileName": "49.mp3",
+      "voiceDurationSeconds": 3.622344,
+      "speed": 1.772184,
+      "sceneIds": [
+        "scene_030"
+      ],
+      "groupId": "scene-group-027",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ad536321-c6b3-4a7b-a0b7-2dcb68dd9c0d",
+      "subtitleSegmentId": "efc039de-e219-41d9-9182-7da986504a8c"
+    },
+    {
+      "cueId": "cue-050",
+      "index": 50,
+      "startSeconds": 71.28,
+      "endSeconds": 72.18,
+      "originalStartSeconds": 71.28,
+      "originalEndSeconds": 72.18,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_030",
+      "durationSeconds": 0.9000000000000057,
+      "text": "กินไม่ได้",
+      "voiceFileName": "50.mp3",
+      "voiceDurationSeconds": 1.056531,
+      "speed": 1.173923,
+      "sceneIds": [
+        "scene_030"
+      ],
+      "groupId": "scene-group-027",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "a5473d5b-e84a-4984-8338-b774bf43d40b",
+      "subtitleSegmentId": "ea6811bb-b315-4f89-892b-386fbca12ac2"
+    },
+    {
+      "cueId": "cue-051",
+      "index": 51,
+      "startSeconds": 72.506,
+      "endSeconds": 73.78,
+      "originalStartSeconds": 72.18,
+      "originalEndSeconds": 73.78,
+      "alignmentDeltaSeconds": 0.3259999999999934,
+      "assignedSceneId": "scene_031",
+      "durationSeconds": 1.274000000000001,
+      "text": "กุ้งชนิดนี้กินได้ไหม",
+      "voiceFileName": "51.mp3",
+      "voiceDurationSeconds": 1.66025,
+      "speed": 1.303179,
+      "sceneIds": [
+        "scene_031"
+      ],
+      "groupId": "scene-group-028",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "ca035d5b-da67-4447-9003-7b7cfa0e6453",
+      "subtitleSegmentId": "0a36a499-8627-426c-a0f4-ca7a3429c4a0"
+    },
+    {
+      "cueId": "cue-052",
+      "index": 52,
+      "startSeconds": 73.974,
+      "endSeconds": 75.08,
+      "originalStartSeconds": 73.78,
+      "originalEndSeconds": 75.08,
+      "alignmentDeltaSeconds": 0.19400000000000261,
+      "assignedSceneId": "scene_032",
+      "durationSeconds": 1.1059999999999945,
+      "text": "นี่คือกุ้งเกลียว",
+      "voiceFileName": "52.mp3",
+      "voiceDurationSeconds": 1.439656,
+      "speed": 1.301678,
+      "sceneIds": [
+        "scene_032"
+      ],
+      "groupId": "scene-group-029",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "52d04758-11dd-43f2-aa59-1f5bb2405d6f",
+      "subtitleSegmentId": "16074d6c-e9cc-43a9-a426-61ed1b18b78d"
+    },
+    {
+      "cueId": "cue-053",
+      "index": 53,
+      "startSeconds": 75.175,
+      "endSeconds": 76.56,
+      "originalStartSeconds": 75.08,
+      "originalEndSeconds": 76.56,
+      "alignmentDeltaSeconds": 0.09499999999999886,
+      "assignedSceneId": "scene_033",
+      "durationSeconds": 1.3850000000000051,
+      "text": "เนื้ออวบแน่น สดหวาน",
+      "voiceFileName": "53.mp3",
+      "voiceDurationSeconds": 2.217531,
+      "speed": 1.601105,
+      "sceneIds": [
+        "scene_033"
+      ],
+      "groupId": "scene-group-030",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "8b3708e8-7407-4630-a644-6024fc18bcfe",
+      "subtitleSegmentId": "19ce49c3-e375-4757-a42a-be79e402f576"
+    },
+    {
+      "cueId": "cue-054",
+      "index": 54,
+      "startSeconds": 76.56,
+      "endSeconds": 77.44,
+      "originalStartSeconds": 76.56,
+      "originalEndSeconds": 77.44,
+      "alignmentDeltaSeconds": 0,
+      "assignedSceneId": "scene_033",
+      "durationSeconds": 0.8799999999999955,
+      "text": "กินได้ อร่อยด้วย",
+      "voiceFileName": "54.mp3",
+      "voiceDurationSeconds": 2.089813,
+      "speed": 2.374788,
+      "sceneIds": [
+        "scene_033"
+      ],
+      "groupId": "scene-group-030",
+      "crossesVisualSceneBoundary": false,
+      "voiceSegmentId": "7328aa29-a660-47be-bf8d-03d0fefd900d",
+      "subtitleSegmentId": "fe492d6e-0250-4f91-a013-90f338419721"
+    }
+  ],
+  "crossSceneCueCount": 3
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "reels-crawl",
+  "outputfilename": "reels-studio",
+  "wailsjsdir": "./frontend/src",
+  "author": {
+    "name": "nhathao",
+    "email": "n.nhathao743@gmail.com"
+  },
+  "info": {
+    "companyName": "Vibe Studio",
+    "productName": "Reels Automation Studio",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright 2026",
+    "comments": "CapCut Automation & Reels Crawl Pipeline"
+  }
+}

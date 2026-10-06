@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reels Automation Studio - Desktop UI Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(18, 24, 38, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(25, 34, 54, 0.85);
+      --accent-purple: #8b5cf6;
+      --accent-cyan: #06b6d4;
+      --accent-green: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --sidebar-width: 250px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.12) 0%, transparent 40%),
+                  radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 45%),
+                  var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+      overflow-x: hidden;
+    }
+
+    /* Window Titlebar (Wails Frame) */
+    .titlebar {
+      height: 38px;
+      background: rgba(11, 15, 25, 0.95);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      font-size: 12px;
+      color: var(--text-muted);
+      z-index: 100;
+    }
+    .titlebar-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    .titlebar-controls {
+      display: flex;
+      gap: 12px;
+    }
+    .titlebar-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .btn-close { background: #ef4444; }
+    .btn-min { background: #f59e0b; }
+    .btn-max { background: #10b981; }
+
+    /* App Container */
+    .app-layout {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 38px);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: var(--sidebar-width);
+      background: rgba(15, 21, 34, 0.85);
+      backdrop-filter: blur(16px);
+      border-right: 1px solid var(--card-border);
+      display: flex;
+      flex-direction: column;
+      padding: 20px 14px;
+      gap: 8px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 12px 20px 12px;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 10px;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+    }
+    .logo-text {
+      font-size: 15px;
+      font-weight: 700;
+      background: linear-gradient(to right, #fff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+    .logo-sub {
+      font-size: 11px;
+      color: var(--accent-cyan);
+      font-weight: 500;
+    }
+
+    .nav-group-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 10px 12px 4px 12px;
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .nav-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+    }
+    .nav-item.active {
+      background: linear-gradient(90deg, rgba(139, 92, 246, 0.15), rgba(6, 182, 212, 0.05));
+      color: #fff;
+      font-weight: 600;
+      border: 1px solid rgba(139, 92, 246, 0.35);
+    }
+    .nav-item.active::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 25%;
+      height: 50%;
+      width: 3.5px;
+      border-radius: 0 4px 4px 0;
+      background: linear-gradient(to bottom, var(--accent-purple), var(--accent-cyan));
+    }
+    .nav-badge {
+      margin-left: auto;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 12px;
+      background: rgba(139, 92, 246, 0.2);
+      color: #c4b5fd;
+      font-weight: 600;
+    }
+
+    .sidebar-footer {
+      margin-top: auto;
+      padding: 14px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      font-size: 11.5px;
+    }
+    .footer-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-green);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      box-shadow: 0 0 8px var(--accent-green);
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 24px 30px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .tab-content {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      animation: fadeIn 0.25s ease;
+    }
+    .tab-content.active {
+      display: flex;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Header Bar */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .page-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .page-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    /* Cards */
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Input Section */
+    .input-row {
+      display: flex;
+      gap: 12px;
+    }
+    .input-box {
+      flex: 1;
+      background: rgba(11, 15, 25, 0.6);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 13.5px;
+      color: var(--text-main);
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .input-box:focus {
+      border-color: var(--accent-purple);
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn:active {
+      transform: scale(0.97);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-purple), #7c3aed);
+      color: white;
+      box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+    }
+    .btn-primary:hover {
+      box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+      filter: brightness(1.1);
+    }
+    .btn-export {
+      background: linear-gradient(135deg, #059669, #10b981);
+      color: white;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+    }
+    .btn-export:hover {
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+      filter: brightness(1.1);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-main);
+      border: 1px solid var(--card-border);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .options-bar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 14px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+    .select-dropdown {
+      background: rgba(11, 15, 25, 0.7);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 5px 12px;
+      font-size: 12px;
+      color: var(--text-main);
+      outline: none;
+    }
+
+    /* Overall Progress Bar */
+    .progress-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13.5px;
+      font-weight: 600;
+    }
+    .progress-bar-track {
+      height: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      width: 65%;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+      box-shadow: 0 0 12px rgba(6, 182, 212, 0.6);
+      transition: width 0.5s ease;
+    }
+    .progress-stats {
+      display: flex;
+      gap: 24px;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .stat-highlight {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Filter & Search Bar */
+    .table-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 6px;
+      background: rgba(11, 15, 25, 0.6);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--card-border);
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+    .filter-btn.active {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* Tasks Data Table */
+    .table-container {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+    th {
+      padding: 12px 16px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--card-border);
+    }
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      vertical-align: middle;
+    }
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+    .badge-exported {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .badge-draft {
+      background: rgba(139, 92, 246, 0.15);
+      color: #c4b5fd;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    .badge-downloading {
+      background: rgba(6, 182, 212, 0.15);
+      color: #67e8f9;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+    }
+    .badge-failed {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fda4af;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    .platform-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .platform-fb { color: #38bdf8; }
+    .platform-tiktok { color: #f43f5e; }
+
+    /* Action icons in table */
+    .row-actions {
+      display: flex;
+      gap: 6px;
+    }
+    .action-icon-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.2s ease;
+    }
+    .action-icon-btn:hover {
+      background: rgba(139, 92, 246, 0.2);
+      color: #fff;
+      border-color: rgba(139, 92, 246, 0.4);
+    }
+
+    /* Modal Overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(4, 7, 13, 0.8);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      animation: fadeIn 0.2s ease;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-box {
+      width: 560px;
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .model-list-item {
+      padding: 14px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Settings Form */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .form-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+    .form-desc {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Window Titlebar -->
+  <div class="titlebar">
+    <div class="titlebar-brand">
+      <span>🎬</span>
+      <span>Reels Automation Studio v1.0.0</span>
+      <span style="font-size: 10px; padding: 2px 6px; background: rgba(139,92,246,0.2); color: #c4b5fd; border-radius: 4px; margin-left: 6px;">Wails v2 Desktop</span>
+    </div>
+    <div class="titlebar-controls">
+      <div class="titlebar-btn btn-min" title="Thu nhỏ"></div>
+      <div class="titlebar-btn btn-max" title="Phóng to"></div>
+      <div class="titlebar-btn btn-close" title="Đóng"></div>
+    </div>
+  </div>
+
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <div class="logo-icon">⚡</div>
+        <div>
+          <div class="logo-text">Reels Studio</div>
+          <div class="logo-sub">CapCut Auto Pipeline</div>
+        </div>
+      </div>
+
+      <div class="nav-group-title">Menu Chính</div>
+      <div class="nav-item active" onclick="switchTab('dashboard')">
+        <span>📥</span>
+        <span>Tiến Trình (Tasks)</span>
+        <span class="nav-badge">20</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('sources')">
+        <span>🌐</span>
+        <span>Kênh Theo Dõi</span>
+        <span class="nav-badge" style="background: rgba(6,182,212,0.2); color: #67e8f9;">12</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('settings')">
+        <span>⚙️</span>
+        <span>Cài Đặt Hệ Thống</span>
+      </div>
+
+      <div class="nav-group-title" style="margin-top: 14px;">Công Cụ Nhanh</div>
+      <div class="nav-item" onclick="openModal('modelModal')">
+        <span>🧠</span>
+        <span>Tải Model Whisper</span>
+      </div>
+      <div class="nav-item" onclick="openModal('exportModal')" style="color: #34d399;">
+        <span>⚡</span>
+        <span>Kích Hoạt Auto Export</span>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="footer-status">
+          <div class="status-dot"></div>
+          <span>Hệ thống sẵn sàng</span>
+        </div>
+        <div style="color: var(--text-dim); margin-top: 4px;">Engine: Groq API (Turbo)</div>
+        <div style="color: var(--text-dim);">Ổ cứng trống: 142 GB (D:)</div>
+      </div>
+    </aside>
+
+    <!-- Main View -->
+    <main class="main-content">
+      
+      <!-- TAB 1: DASHBOARD -->
+      <section id="tab-dashboard" class="tab-content active">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Bảng Điều Khiển Tác Vụ (Dashboard)</h1>
+            <p class="page-subtitle">Nhập liên kết Reels/TikTok để tự động tải, bóc tách phụ đề và tạo project CapCut ngầm.</p>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-secondary" onclick="alert('Mở thư mục: D:/reels-crawl/downloads')">📁 Mở Thư Mục Video</button>
+            <button class="btn btn-export" onclick="openModal('exportModal')">⚡ Xuất Hàng Loạt (Pha 2)</button>
+          </div>
+        </div>
+
+        <!-- Input Box Card -->
+        <div class="glass-card">
+          <div style="font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-main);">
+            Nhập liên kết Profile Facebook / TikTok hoặc dán URL Reel đơn lẻ:
+          </div>
+          <div class="input-row">
+            <input type="text" class="input-box" placeholder="Ví dụ: https://www.facebook.com/reel/1029384756 hoặc dán link profile để quét..." value="https://www.facebook.com/reel/102938475628192">
+            <button class="btn btn-primary" onclick="alert('Bắt đầu tải và xử lý video!')">▶ Bắt Đầu Cào (Pha 1)</button>
+          </div>
+          <div class="options-bar">
+            <label class="checkbox-label">
+              <input type="checkbox" checked> Bỏ qua video đã tải trước đó (Deduplication)
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" checked> Tự động bóc tách link trong comment tác giả
+            </label>
+            <div style="display: flex; align-items: center; gap: 8px; margin-left: auto;">
+              <span>Template CapCut:</span>
+              <select class="select-dropdown">
+                <option>template-fb (Mặc định)</option>
+                <option>template-review-doc</option>
+                <option>template-tiktok-vibe</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overall Progress Card -->
+        <div class="glass-card progress-card">
+          <div class="progress-header">
+            <span>Tiến trình xử lý toàn bộ: <span style="color: var(--accent-cyan);">65%</span> (13/20 video hoàn thành)</span>
+            <span style="font-size: 12px; color: var(--text-dim);">Dự kiến còn: ~4 phút</span>
+          </div>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <div class="progress-stats">
+            <div>Đã tải gốc: <span class="stat-highlight">18/20</span></div>
+            <div>Phụ đề STT: <span class="stat-highlight">15/20</span></div>
+            <div>Đã tạo CapCut Draft: <span class="stat-highlight" style="color: #c4b5fd;">13/20</span></div>
+            <div>Đã xuất MP4: <span class="stat-highlight" style="color: #34d399;">10/20</span></div>
+            <div>Lỗi / Bỏ qua: <span class="stat-highlight" style="color: #fda4af;">1</span></div>
+          </div>
+        </div>
+
+        <!-- Table Card -->
+        <div class="glass-card" style="padding: 16px 20px;">
+          <div class="table-actions" style="margin-bottom: 14px;">
+            <div class="filter-tabs">
+              <button class="filter-btn active">Tất cả (20)</button>
+              <button class="filter-btn">Đã tạo Draft (13)</button>
+              <button class="filter-btn">Đã xuất video (10)</button>
+              <button class="filter-btn">Đang chạy (3)</button>
+              <button class="filter-btn">Lỗi (1)</button>
+            </div>
+            <div style="font-size: 12px; color: var(--text-dim);">Tự động làm mới mỗi 2s</div>
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nền Tảng</th>
+                  <th>ID Video / Tiêu Đề</th>
+                  <th>Bóc Tách Web</th>
+                  <th>Phụ Đề (STT)</th>
+                  <th>Trạng Thái</th>
+                  <th>Thao Tác Nhanh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="platform-tag platform-fb">ⓕ Facebook</span></td>
+                  <td>
+                    <div style="font-weight: 600;">fb_1029384756</div>
+                    <div style="font-size: 11px; color: var(--text-dim);">Review phim hay tập 01...</div>
+                  </td>
+                  <td><span style="color: #34d399;">✓ 3 Chapters</span></td>
+                  <td><span style="color: #34d399;">✓ Groq (1.8s)</span></td>
+                  <td><span class="badge badge-exported">● Đã Xuất Video</span></td>
+                  <td>
+                    <div class="row-actions">
+                      <button class="action-icon-btn" title="Mở thư mục video">📁</button>
+                      <button class="action-icon-btn" title="Xem video thành phẩm">🎬</button>
+                      <button class="action-icon-btn" title="Mở dự án trên CapCut">✂</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="platform-tag platform-tiktok">♬ TikTok</span></td>
+                  <td>
+                    <div style="font-weight: 600;">tt_7381920491</div>
+                    <div style="font-size: 11px; color: var(--text-dim);">Top mẹo công nghệ cực đỉnh...</div>
+                  </td>
+                  <td><span style="color: var(--text-dim);">- Không có link</span></td>
+                  <td><span style="color: #34d399;">✓ Whisper Local</span></td>
+                  <td><span class="badge badge-draft">● Đã Tạo Draft</span></td>
+                  <td>
+                    <div class="row-actions">
+                      <button class="action-icon-btn" title="Mở thư mục video">📁</button>
+                      <button class="action-icon-btn" title="Mở dự án trên CapCut">✂</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="platform-tag platform-fb">ⓕ Facebook</span></td>
+                  <td>
+                    <div style="font-weight: 600;">fb_9182374612</div>
+                    <div style="font-size: 11px; color: var(--text-dim);">Truyện ngắn kinh dị đêm khuya...</div>
+                  </td>
+                  <td><span style="color: var(--accent-cyan);">⟳ Đang cào link...</span></td>
+                  <td><span style="color: var(--text-dim);">Chờ tải xong</span></td>
+                  <td><span class="badge badge-downloading">● Đang Tải (45%)</span></td>
+                  <td>
+                    <div class="row-actions">
+                      <button class="action-icon-btn" title="Tạm dừng">⏸</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="platform-tag platform-fb">ⓕ Facebook</span></td>
+                  <td>
+                    <div style="font-weight: 600;">fb_8471928374</div>
+                    <div style="font-size: 11px; color: var(--text-dim);">Link bị người dùng xóa...</div>
+                  </td>
+                  <td><span style="color: var(--text-dim);">-</span></td>
+                  <td><span style="color: var(--text-dim);">-</span></td>
+                  <td><span class="badge badge-failed">✕ Link Chết (404)</span></td>
+                  <td>
+                    <div class="row-actions">
+                      <button class="action-icon-btn" title="Xem log lỗi chi tiết">⚠️</button>
+                      <button class="action-icon-btn" title="Thử lại">⟳</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: SOURCES -->
+      <section id="tab-sources" class="tab-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Quản Lý Kênh & Nguồn Theo Dõi (Sources)</h1>
+            <p class="page-subtitle">Hệ thống sẽ lưu danh sách các Page Facebook và Profile TikTok để tự động quét phát hiện video mới.</p>
+          </div>
+          <button class="btn btn-primary" onclick="alert('Đang quét kiểm tra video mới trên tất cả 12 kênh!')">⟳ Quét Tất Cả Kênh</button>
+        </div>
+
+        <div class="glass-card">
+          <div class="input-row">
+            <input type="text" class="input-box" placeholder="Dán link Page hoặc Profile (Ví dụ: https://www.facebook.com/reviewphimhay)...">
+            <button class="btn btn-secondary">+ Thêm Kênh Mới</button>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Nền Tảng</th>
+                <th>Tên Kênh / Profile</th>
+                <th>URL Theo Dõi</th>
+                <th>Số Video Đã Cào</th>
+                <th>Lần Quét Cuối</th>
+                <th>Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="platform-tag platform-fb">ⓕ Facebook</span></td>
+                <td><strong>Ghiền Phim Review</strong></td>
+                <td><code style="color: var(--accent-cyan);">facebook.com/ghienphimhay</code></td>
+                <td><strong>145</strong> video</td>
+                <td>10 phút trước</td>
+                <td><button class="action-icon-btn">⟳</button></td>
+              </tr>
+              <tr>
+                <td><span class="platform-tag platform-tiktok">♬ TikTok</span></td>
+                <td><strong>@congnghe_trend</strong></td>
+                <td><code style="color: var(--accent-cyan);">tiktok.com/@congnghe_trend</code></td>
+                <td><strong>89</strong> video</td>
+                <td>1 giờ trước</td>
+                <td><button class="action-icon-btn">⟳</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 3: SETTINGS -->
+      <section id="tab-settings" class="tab-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Cài Đặt & Cấu Hình Hệ Thống</h1>
+            <p class="page-subtitle">Thiết lập môi trường CapCut Desktop, API nhận diện giọng nói và thư mục lưu trữ.</p>
+          </div>
+          <button class="btn btn-primary" onclick="alert('Đã lưu cấu hình thành công!')">💾 Lưu Cấu Hình</button>
+        </div>
+
+        <div class="glass-card">
+          <h3 style="margin-bottom: 14px; font-size: 15px; color: var(--accent-cyan);">1. Cấu hình CapCut Desktop & Template</h3>
+          <div class="form-group">
+            <label class="form-label">Thư mục dự án CapCut (Draft Path):</label>
+            <input type="text" class="input-box" value="C:\Users\Admin\AppData\Local\CapCut\User Data\Projects\com.lveditor.draft">
+            <span class="form-desc">Để trống để ứng dụng tự động dò tìm qua Windows Registry.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tên Template chuẩn mẫu:</label>
+            <input type="text" class="input-box" value="template-fb" style="width: 300px;">
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 style="margin-bottom: 14px; font-size: 15px; color: var(--accent-purple);">2. Nhận Diện Giọng Nói (Speech-to-Text)</h3>
+          <div class="form-group">
+            <label class="form-label">Phương thức nhận diện:</label>
+            <div style="display: flex; gap: 20px; margin-top: 6px;">
+              <label class="checkbox-label">
+                <input type="radio" name="stt_mode" checked> <strong>Cloud API (Groq Whisper Large v3)</strong> [Tốc độ siêu nhanh 1-2s]
+              </label>
+              <label class="checkbox-label">
+                <input type="radio" name="stt_mode"> <strong>Local Offline (faster-whisper)</strong> [Miễn phí, không cần mạng]
+              </label>
+            </div>
+          </div>
+          <div class="form-group" style="margin-top: 10px;">
+            <label class="form-label">Groq API Key:</label>
+            <div class="input-row">
+              <input type="password" class="input-box" value="gsk_live981293847120398401928340192">
+              <button class="btn btn-secondary">Kiểm Tra Kết Nối</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 style="margin-bottom: 14px; font-size: 15px; color: var(--accent-green);">3. Quản Lý Dung Lượng & Ổ Đĩa</h3>
+          <div class="form-group">
+            <label class="form-label">Thư mục tải video thành phẩm:</label>
+            <input type="text" class="input-box" value="D:\reels-crawl\downloads">
+          </div>
+          <label class="checkbox-label">
+            <input type="checkbox" checked> Tự động xóa video gốc (raw_video.mp4) sau khi CapCut đã xuất thành phẩm thành công.
+          </label>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- MODAL 1: TẢI MODEL WHISPER -->
+  <div id="modelModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-title">
+        <span>🧠</span>
+        <span>Trình Quản Lý Tải Model Whisper Offline</span>
+      </div>
+      <p style="font-size: 13px; color: var(--text-muted);">
+        Chọn model để tải về máy dùng cho chế độ Offline không cần internet. File lưu tại thư mục <code>models/</code>.
+      </p>
+
+      <div class="model-list-item">
+        <div>
+          <div style="font-weight: 600;">Whisper Tiny (~75 MB)</div>
+          <div style="font-size: 12px; color: var(--text-dim);">Tải siêu nhanh, độ chính xác cơ bản.</div>
+        </div>
+        <span class="badge badge-exported">Đã Cài Đặt</span>
+      </div>
+
+      <div class="model-list-item" style="border-color: rgba(139,92,246,0.3);">
+        <div>
+          <div style="font-weight: 600; color: #c4b5fd;">Whisper Base (~145 MB) [Khuyên dùng]</div>
+          <div style="font-size: 12px; color: var(--text-dim);">Cân bằng tối ưu giữa tốc độ và độ chuẩn tiếng Việt.</div>
+          <div class="progress-bar-track" style="margin-top: 8px; width: 260px;">
+            <div class="progress-bar-fill" style="width: 65%;"></div>
+          </div>
+        </div>
+        <button class="btn btn-secondary" style="font-size: 12px; padding: 6px 12px;">Đang Tải (65%)</button>
+      </div>
+
+      <div class="model-list-item">
+        <div>
+          <div style="font-weight: 600;">Whisper Small (~460 MB)</div>
+          <div style="font-size: 12px; color: var(--text-dim);">Chuẩn xác cao nhất, khuyên dùng nếu máy có GPU.</div>
+        </div>
+        <button class="btn btn-secondary" style="font-size: 12px; padding: 6px 12px;">⬇ Tải Về</button>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; margin-top: 8px;">
+        <button class="btn btn-secondary" onclick="closeModal('modelModal')">Đóng Hộp Thoại</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: AUTO EXPORT CONFIRM -->
+  <div id="exportModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-title" style="color: #fbbf24;">
+        <span>⚠️</span>
+        <span>Xác Nhận Xuất Video Hàng Loạt (Pha 2)</span>
+      </div>
+      <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.5;">
+        Hệ thống chuẩn bị kích hoạt <strong>Windows UI Automation</strong> để điều khiển CapCut Desktop xuất <span style="color: #fff; font-weight: 700;">13 dự án</span> đã tạo Draft.
+      </p>
+
+      <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.25); padding: 14px; border-radius: 10px; font-size: 12.5px; color: #fde68a;">
+        <strong>LƯU Ý QUAN TRỌNG:</strong>
+        <ul style="margin-left: 18px; margin-top: 6px; line-height: 1.6;">
+          <li>Nếu CapCut đang mở, ứng dụng sẽ <strong>tự động đóng CapCut</strong> để làm sạch môi trường trước khi khởi động.</li>
+          <li>Vui lòng không dùng chuột bấm đè lên màn hình CapCut trong khi đang render (Ctrl + E).</li>
+          <li>Các video đã xuất thành công sẽ tự động được bỏ qua (Skip).</li>
+        </ul>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px;">
+        <button class="btn btn-secondary" onclick="closeModal('exportModal')">Hủy Bỏ</button>
+        <button class="btn btn-export" onclick="alert('Đã kích hoạt Pha 2! CapCut sẽ lần lượt mở và xuất video.'); closeModal('exportModal')">⚡ Bắt Đầu Xuất Ngay</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+
+      const targetTab = document.getElementById('tab-' + tabName);
+      if (targetTab) targetTab.classList.add('active');
+
+      const activeNav = Array.from(document.querySelectorAll('.nav-item')).find(item => 
+        item.getAttribute('onclick')?.includes(tabName)
+      );
+      if (activeNav) activeNav.classList.add('active');
+    }
+
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) modal.classList.add('active');
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) modal.classList.remove('active');
+    }
+  </script>
+</body>
+</html>

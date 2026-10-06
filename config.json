@@ -1,0 +1,15 @@
+{
+  "app_mode": "gui",
+  "capcut_draft_path": "C:\\Users\\nhathao\\AppData\\Local\\CapCut\\User Data\\Projects\\com.lveditor.draft",
+  "template_name": "template",
+  "whisper_provider": "groq_api",
+  "groq_api_key": "",
+  "local_whisper_model": "base",
+  "export_resolution": "1080p",
+  "download_dir": "downloads",
+  "max_chapters_per_story": 20,
+  "request_delay_seconds": 2,
+  "auto_delete_raw": true,
+  "skip_duplicates": true,
+  "extract_comment_links": true
+}

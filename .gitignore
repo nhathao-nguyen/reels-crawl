@@ -1,0 +1,32 @@
+# Executables & Binaries
+*.exe
+bin/*
+!bin/.gitkeep
+reels-tool.exe
+
+# Models (Whisper models are downloaded on demand)
+models/*
+!models/.gitkeep
+
+# Downloads
+downloads/*
+!downloads/.gitkeep
+
+# Local database & temp files
+data.db
+data.db-wal
+data.db-shm
+data.db-journal
+
+# Secrets & Sessions
+cookies.txt
+
+# Spikes
+/spikes/
+
+# Wails build binaries
+build/bin/
+
+# Temporary and backup files
+*.tmp
+*.bak
